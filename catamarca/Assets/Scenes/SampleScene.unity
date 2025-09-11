@@ -312,6 +312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bda428366fb89a942917c4af033c1628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerUI: {fileID: 1764676084}
   p1: {fileID: 449161310745088038}
   p2: {fileID: 1394869289}
 --- !u!114 &121148228
@@ -344,7 +345,7 @@ MonoBehaviour:
     totalQuestions: 0
     delayForNextTrivia: 0
     delayResponseDone: 0
-    timer: 0
+    questionDuration: 0
     wrong_answers: []
 --- !u!1 &519420028
 GameObject:
@@ -1028,6 +1029,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1764676083}
+  - component: {fileID: 1764676084}
   m_Layer: 5
   m_Name: Timer
   m_TagString: Untagged
@@ -1056,6 +1058,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1764676084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764676082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e34aeb8ef839804a96934dcb6637f40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  progress: {fileID: 915991627}
 --- !u!1001 &449161310745088034
 PrefabInstance:
   m_ObjectHideFlags: 0
