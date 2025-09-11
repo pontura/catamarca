@@ -1,0 +1,113 @@
+{
+	"questions":
+	[
+		{
+			"title": "¿Qué mineral hace que funcione la batería de un celular?",
+			"results":
+			[
+				{"response": "Litio"},
+				{"response": "Mármol"},
+				{"response": "Grafito"}
+			]
+		},
+		{
+			"title": "En la computadora, los circuitos llevan...",
+			"results":
+			[
+				{"response": "Cobre y Oro"},
+				{"response": "Yeso y Talco"},
+				{"response": "Calcita y Baritina"}
+			]
+		},
+		{
+			"title": "El vaso de vidrio está hecho con...",
+			"results":
+			[
+				{"response": "Cuarzo, Feldespato y Sílice"},
+				{"response": "Rodocrosita y Rubí"},
+				{"response": "Titanio y Platino"}
+			]
+		},
+		{
+			"title": "¿Qué mineral está en las lámparas LED y en los paneles solares?",
+			"results":
+			[
+				{"response": "Silicio"},
+				{"response": "Hierro"},
+				{"response": "Fluorita"}
+			]
+		},
+		{
+			"title": "La mina de un lápiz está hecha de...",
+			"results":
+			[
+				{"response": "Grafito y Arcilla"},
+				{"response": "Plata y Oro"},
+				{"response": "Caolín y Yeso"}
+			]
+		},
+		{
+			"title": "La tiza del pizarrón contiene...",
+			"results":
+			[
+				{"response": "Yeso y Caolinita"},
+				{"response": "Cuarzo y Feldespato"},
+				{"response": "Litio y Mica"}
+			]
+		},
+		{
+			"title": "En los cosméticos como labiales y sombras se encuentran minerales como...",
+			"results":
+			[
+				{"response": "Mica, Óxido de zinc, Dióxido de titanio"},
+				{"response": "Oro y Plata"},
+				{"response": "Azufre y Fósforo"}
+			]
+		},
+		{
+			"title": "Los antibióticos que previenen bacterias contienen...",
+			"results":
+			[
+				{"response": "Plata"},
+				{"response": "Hierro"},
+				{"response": "Manganeso"}
+			]
+		},
+		{
+			"title": "Los marcapasos artificiales funcionan gracias a...",
+			"results":
+			[
+				{"response": "Platino y Litio"},
+				{"response": "Cuarzo y Yeso"},
+				{"response": "Calcita y Talco"}
+			]
+		},
+		{
+			"title": "El resonador magnético usa...",
+			"results":
+			[
+				{"response": "Cobre"},
+				{"response": "Rubí"},
+				{"response": "Dolomita"}
+			]
+		},
+		{
+			"title": "La carrocería y motor de los autos contienen...",
+			"results":
+			[
+				{"response": "Hierro, Aluminio, Cobre, Litio"},
+				{"response": "Yeso y Baritina"},
+				{"response": "Plata y Rodocrosita"}
+			]
+		},
+		{
+			"title": "En la huerta, los fertilizantes que ayudan a crecer a los tomates llevan...",
+			"results":
+			[
+				{"response": "Fósforo y Azufre"},
+				{"response": "Oro y Rubí"},
+				{"response": "Titanio y Silicio"}
+			]
+		}
+	]
+}
