@@ -13,7 +13,7 @@ public class GameData : MonoBehaviour
         public int totalQuestions;
         public float delayForNextTrivia;
         public float delayResponseDone;
-        public int timer;
+        public float questionDuration;
         public string[] wrong_answers;
     }
     public void Load(string json, System.Action OnLoaded)

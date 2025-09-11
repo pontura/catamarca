@@ -2,7 +2,7 @@
 	"totalQuestions":6,
 	"delayForNextTrivia":2,
 	"delayResponseDone":1,
-	"timer":60,
+	"questionDuration":10,
 	"wrong_answers":
 	[
 		"¡Ups! No es esa. Probá otra vez.",
