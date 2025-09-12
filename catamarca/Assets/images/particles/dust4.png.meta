@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 424f608a6957f02479cb737d809082d4
+guid: 29307f7af85f81f4b9ecf2715534a37f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8880984889591353857
-    second: 3_lose_0
+      213: -4078264911854182903
+    second: dust4_0
+  - first:
+      213: 8309500885279906753
+    second: dust4_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +75,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 3_lose_0
+      name: dust4_0
       rect:
         serializedVersion: 2
-        x: 3
+        x: 1
         y: 0
-        width: 1019
-        height: 1019
+        width: 124
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ffdab40eb4760c480800000000000000
-      internalID: -8880984889591353857
+      spriteID: 90eddf49ba71767c0800000000000000
+      internalID: -4078264911854182903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dust4_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 26
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cb17ef8707415370800000000000000
+      internalID: 8309500885279906753
       vertices: []
       indices: 
       edges: []
@@ -138,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      3_lose_0: -8880984889591353857
+      dust4_0: -4078264911854182903
+      dust4_1: 8309500885279906753
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
