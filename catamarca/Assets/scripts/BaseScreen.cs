@@ -10,7 +10,10 @@ public class BaseScreen : MonoBehaviour
     public void Show(bool isOn)
     {
         gameObject.SetActive(isOn);
-        if (isOn) {  OnShow(); }else{ OnHide(); }    
+        if (isOn)
+            OnShow();
+        else
+            OnHide();
     }
     public virtual void OnShow()  { }
     public virtual void OnHide()  { }

@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using YaguarLib.UI;
 
 namespace Trivia
 {
@@ -10,6 +11,10 @@ namespace Trivia
         [SerializeField] TriviaButton button;
         [SerializeField] List<TriviaButton> buttons;
 
+        [SerializeField] List<ProgressPoint> progressPoints;
+        [SerializeField] ProgressPoint progressPoint;
+        [SerializeField] Transform progressPointsContainer;
+
         TriviaData.Result resultDone;
         [SerializeField] TimerUI timerUI;
 
@@ -19,7 +24,18 @@ namespace Trivia
 
         public override void OnShow()
         {
-            InitTrivia(Data.Instance.triviaData.data.questions[triviaID]);        
+            print("Trivia OnShow");
+            triviaID = 0;
+            progressPoints = new List<ProgressPoint>();
+            YaguarLib.Xtras.Utils.RemoveAllChildsIn(progressPointsContainer);
+            for (int a = 0; a < Data.Instance.gameData.data.totalQuestions; a++)
+            {
+                ProgressPoint p = Instantiate(progressPoint, progressPointsContainer);
+                progressPoints.Add(p);
+                p.SetState(ProgressPoint.states.off);
+            }
+
+            InitTrivia(Data.Instance.triviaData.data.questions[triviaID]);           
         }
         public void InitTrivia(TriviaData.Question question)
         {
@@ -28,6 +44,7 @@ namespace Trivia
             YaguarLib.Xtras.Utils.Shuffle(Data.Instance.triviaData.data.questions[triviaID].results);
 
             field.text = question.title;
+
             YaguarLib.Xtras.Utils.RemoveAllChildsIn(container);
 
             int buttonId = 0;
@@ -39,6 +56,12 @@ namespace Trivia
                 buttonId++;
                 buttons.Add(b);
             }
+            print("InitTrivia" + triviaID);
+            Invoke("Delayed", 0.1f);
+        }
+        void Delayed()
+        {
+            progressPoints[triviaID].SetState(ProgressPoint.states.on);
         }
         public void OnSelect(TriviaButton button)
         {
@@ -68,6 +91,12 @@ namespace Trivia
         void CheckResultsDone()
         {
             bool isCorrect = CheckResult();
+
+            if(isCorrect)
+                progressPoints[triviaID].SetState(ProgressPoint.states.done_ok);
+            else
+                progressPoints[triviaID].SetState(ProgressPoint.states.done_wrong);
+
             Events.OnResponse(isCorrect);
             Invoke("Next", Data.Instance.gameData.data.delayForNextTrivia);
         }
@@ -75,13 +104,13 @@ namespace Trivia
         {
             triviaID++;
             if (triviaID >= Data.Instance.gameData.data.totalQuestions)
-                TriviaDone();
+                TriviaComplete();
             //else
             InitTrivia(Data.Instance.triviaData.data.questions[triviaID]);
         }
-        void TriviaDone()
+        void TriviaComplete()
         {
-            triviaID = 0;
+            game.NextScreen();
         }
     }
 }

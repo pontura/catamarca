@@ -19,14 +19,14 @@ public class GameManager : MonoBehaviour
     }
     void ShowScreen()
     {
+        print("ShowScreen " + screenID);
         HideScreens();
         screens[screenID].Show(true);
-        print("ShowScreen " + screenID);
     }
     public void NextScreen()
     {
         screenID++;
-        if (screenID > screens.Length) screenID = 0;
+        if (screenID >= screens.Length) screenID = 0;
         ShowScreen();
     }
     void HideScreens()
