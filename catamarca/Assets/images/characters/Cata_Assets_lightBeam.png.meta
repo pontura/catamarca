@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0255622be4f7e8d44a97389aedfc500c
+guid: 793f9adf1c36d024a806dbafa7dbd28f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5681613791555460825
-    second: plane_0
+      213: -6508347970933919654
+    second: Cata_Assets_lightBeam_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,43 +109,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plane_0
+      name: Cata_Assets_lightBeam_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 138
-        height: 127
+        y: 5
+        width: 1167
+        height: 208
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 721606beb5ad621b0800000000000000
-      internalID: -5681613791555460825
+      spriteID: a5079ddc004bda5a0800000000000000
+      internalID: -6508347970933919654
       vertices: []
       indices: 
       edges: []
@@ -174,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      plane_0: -5681613791555460825
+      Cata_Assets_lightBeam_0: -6508347970933919654
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
