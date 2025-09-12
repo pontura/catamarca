@@ -104,9 +104,11 @@ namespace Trivia
         {
             triviaID++;
             if (triviaID >= Data.Instance.gameData.data.totalQuestions)
+            {
+                triviaID = 0;
                 TriviaComplete();
-            //else
-            InitTrivia(Data.Instance.triviaData.data.questions[triviaID]);
+            } else
+                InitTrivia(Data.Instance.triviaData.data.questions[triviaID]);
         }
         void TriviaComplete()
         {

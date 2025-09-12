@@ -1,7 +1,7 @@
 {
 	"totalQuestions":6,
 	"delayForNextTrivia":2,
-	"delayResponseDone":1,
+	"delayResponseDone":0.1,
 	"questionDuration":10,
 	"wrong_answers":
 	[
