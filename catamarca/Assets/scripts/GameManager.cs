@@ -5,8 +5,8 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] TriviaUI trivia;
     [SerializeField] BaseScreen[] screens;
+    [SerializeField] int screenID;
 
-    int screenID;
     public void Initialize()
     {
         HideScreens();
@@ -21,11 +21,13 @@ public class GameManager : MonoBehaviour
     {
         HideScreens();
         screens[screenID].Show(true);
+        print("ShowScreen " + screenID);
     }
-    void NextScreen()
+    public void NextScreen()
     {
         screenID++;
         if (screenID > screens.Length) screenID = 0;
+        ShowScreen();
     }
     void HideScreens()
     {
