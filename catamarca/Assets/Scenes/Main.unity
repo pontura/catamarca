@@ -994,10 +994,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5009749404659928549, guid: abcfdc412b818884599969f86205bacd, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6434841837856100455, guid: abcfdc412b818884599969f86205bacd, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1125,22 +1121,6 @@ PrefabInstance:
     - target: {fileID: 8426538387553123284, guid: abcfdc412b818884599969f86205bacd, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8751591077181165704, guid: abcfdc412b818884599969f86205bacd, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 7895888872765912468, guid: 30e9476e6b660ea429fce0408ad1e658, type: 3}
-    - target: {fileID: 8751591077181165704, guid: abcfdc412b818884599969f86205bacd, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8751591077181165704, guid: abcfdc412b818884599969f86205bacd, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8751591077181165704, guid: abcfdc412b818884599969f86205bacd, type: 3}
-      propertyPath: m_Color.r
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
