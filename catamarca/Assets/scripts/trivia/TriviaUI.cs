@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Trivia
 {
-    public class TriviaUI : MonoBehaviour
+    public class TriviaUI : BaseScreen
     {
         [SerializeField] TMPro.TMP_Text field;
         [SerializeField] Transform container;
@@ -11,11 +11,22 @@ namespace Trivia
         [SerializeField] List<TriviaButton> buttons;
 
         TriviaData.Result resultDone;
-        GameManager game;
+        [SerializeField] TimerUI timerUI;
 
-        public void Init(GameManager game, TriviaData.Question question)
+        int triviaID;
+
+        string okResponse;
+
+        public override void OnShow()
         {
-            this.game = game;
+            InitTrivia(Data.Instance.triviaData.data.questions[triviaID]);        
+        }
+        public void InitTrivia(TriviaData.Question question)
+        {
+            timerUI.Init(Data.Instance.gameData.data.questionDuration);
+            okResponse = Data.Instance.triviaData.data.questions[triviaID].results[0].response;
+            YaguarLib.Xtras.Utils.Shuffle(Data.Instance.triviaData.data.questions[triviaID].results);
+
             field.text = question.title;
             YaguarLib.Xtras.Utils.RemoveAllChildsIn(container);
 
@@ -23,7 +34,7 @@ namespace Trivia
             buttons = new List<TriviaButton>();
             foreach (TriviaData.Result result in question.results)
             {
-                TriviaButton b =  Instantiate(button, container);
+                TriviaButton b = Instantiate(button, container);
                 b.Init(this, buttonId, result);
                 buttonId++;
                 buttons.Add(b);
@@ -37,18 +48,40 @@ namespace Trivia
                 b.SetInteraction(false);
                 b.OnSelected(b == button);
             }
-            game.CheckResults();
+            StopGame(); 
         }
-        public bool CheckResult(string okResponse)
+        public bool CheckResult()
         {
             bool isCorrect = okResponse == resultDone.response;
-
             foreach (TriviaButton b in buttons)
             {
                 b.SetResult(b.result.response == okResponse);
             }
-
             return isCorrect;
+        }
+
+        void StopGame()
+        {
+            timerUI.SetOff();
+            Invoke("CheckResultsDone", Data.Instance.gameData.data.delayResponseDone);
+        }
+        void CheckResultsDone()
+        {
+            bool isCorrect = CheckResult();
+            Events.OnResponse(isCorrect);
+            Invoke("Next", Data.Instance.gameData.data.delayForNextTrivia);
+        }
+        void Next()
+        {
+            triviaID++;
+            if (triviaID >= Data.Instance.gameData.data.totalQuestions)
+                TriviaDone();
+            //else
+            InitTrivia(Data.Instance.triviaData.data.questions[triviaID]);
+        }
+        void TriviaDone()
+        {
+            triviaID = 0;
         }
     }
 }

@@ -1,70 +1,41 @@
-using System;
 using Trivia;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    TriviaData triviaData;
-    GameData gameData;
+    [SerializeField] TriviaUI trivia;
+    [SerializeField] BaseScreen[] screens;
 
-    [SerializeField] TimerUI timerUI;
-    [SerializeField] TriviaUI p1;
-    [SerializeField] TriviaUI p2;
+    int screenID;
+    public void Initialize()
+    {
+        HideScreens();
+    }
+    public void Init()
+    {
+        foreach (BaseScreen s in screens)
+            s.Init(this);
+        ShowScreen();
+    }
+    void ShowScreen()
+    {
+        HideScreens();
+        screens[screenID].Show(true);
+    }
+    void NextScreen()
+    {
+        screenID++;
+        if (screenID > screens.Length) screenID = 0;
+    }
+    void HideScreens()
+    {
+        foreach (BaseScreen s in screens)
+            s.Show(false);
+    }
 
-    int triviaID;
 
-    private void Awake()
-    {
-        triviaData = GetComponent<TriviaData>();
-        gameData = GetComponent<GameData>();
-    }
-    void Start()
-    {
-        gameData.Load("data.json", OnDataDone);
-    }
-    void OnDataDone()
-    {
-        triviaData.Load("trivia.json", InitTrivia);
-    }
-    string okResponse;
-    void InitTrivia()
-    {
-        timerUI.Init(gameData.data.questionDuration);
-        okResponse = triviaData.data.questions[triviaID].results[0].response;
-        YaguarLib.Xtras.Utils.Shuffle(triviaData.data.questions[triviaID].results);
-        p1.Init(this, triviaData.data.questions[triviaID]);
-        p2.Init(this, triviaData.data.questions[triviaID]);
-    }
-    int results;
-    public void CheckResults()
-    {
-        results++;
-        if (results >= 2)
-            StopGame();
-    }
-    void StopGame()
-    {
-        timerUI.SetOff();
-        Invoke("CheckResultsDone", gameData.data.delayResponseDone);
-    }
-    void CheckResultsDone()
-    {
-        p1.CheckResult(okResponse);
-        p2.CheckResult(okResponse);
 
-        Invoke("Next", gameData.data.delayForNextTrivia);
-    }
-    void Next()
-    {
-        results = 0;
-        triviaID++;
-        if (triviaID >= gameData.data.totalQuestions)
-            Done();
-        else
-            InitTrivia();
-    }
-    void Done()
-    {
-        results = 0;
-    }
+
+   
+
 }
