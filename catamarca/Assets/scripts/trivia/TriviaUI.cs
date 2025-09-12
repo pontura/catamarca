@@ -17,7 +17,7 @@ namespace Trivia
 
         TriviaData.Result resultDone;
         [SerializeField] TimerUI timerUI;
-
+        List <TriviaData.Result> results;
         int triviaID;
 
         string okResponse;
@@ -34,14 +34,14 @@ namespace Trivia
                 progressPoints.Add(p);
                 p.SetState(ProgressPoint.states.off);
             }
+          
 
             InitTrivia(Data.Instance.triviaData.data.questions[triviaID]);           
         }
         public void InitTrivia(TriviaData.Question question)
         {
             timerUI.Init(Data.Instance.gameData.data.questionDuration);
-            okResponse = Data.Instance.triviaData.data.questions[triviaID].results[0].response;
-            YaguarLib.Xtras.Utils.Shuffle(Data.Instance.triviaData.data.questions[triviaID].results);
+            okResponse = Data.Instance.triviaData.data.questions[triviaID].results[0].response;          
 
             field.text = question.title;
 
@@ -49,7 +49,14 @@ namespace Trivia
 
             int buttonId = 0;
             buttons = new List<TriviaButton>();
-            foreach (TriviaData.Result result in question.results)
+
+            results = new List<TriviaData.Result>();
+            foreach (TriviaData.Result result in Data.Instance.triviaData.data.questions[triviaID].results)
+            {
+                results.Add(result);
+            }
+            YaguarLib.Xtras.Utils.Shuffle(results);
+            foreach (TriviaData.Result result in results)
             {
                 TriviaButton b = Instantiate(button, container);
                 b.Init(this, buttonId, result);
