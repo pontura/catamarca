@@ -13,6 +13,7 @@ public class TimerUI : MonoBehaviour
         isOn = true;
         timer = 0;
         this.duration = duration;
+        progress.fillAmount = 1;
     }
     public void SetOff()
     {
@@ -22,10 +23,10 @@ public class TimerUI : MonoBehaviour
     {
         if (!isOn) return;
         timer += Time.deltaTime;
-        float v = (timer / duration);
-        if (v >= 0.99f)
+        float v = 1-(timer / duration);
+        if (v <= 0)
         {
-            v = 1; 
+            v = 0; 
             SetOff();
             Events.OnTimeOver();
         }

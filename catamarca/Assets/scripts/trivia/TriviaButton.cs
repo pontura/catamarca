@@ -33,24 +33,26 @@ namespace Trivia
         }
         public void OnSelected(bool hasBeenClicked)
         {
-            if(hasBeenClicked)
-                anim.Play("SelectedDone");
-            else 
+            //if (hasBeenClicked)
+            //    anim.Play("SelectedDone");
+            //else 
                 anim.Play("Disabled");
         }
         public void SetResult(bool isCorrect)
         {
             if (isCorrect)
             {
-                anim.Play("Correct");
                 if(selected)
-                    feedback.Play("correct");
+                    anim.Play("CorrectSelected");
+                else
+                    anim.Play("CorrectUnselected");
             }
             else
             {
-                anim.Play("Incorrect");
                 if (selected)
-                    feedback.Play("incorrect");
+                    anim.Play("IncorrectSelected");
+                else
+                    anim.Play("Disabled");
             }
         }
     }
