@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] TriviaUI trivia;
     [SerializeField] BaseScreen[] screens;
     [SerializeField] int screenID;
+    public int playerID = 0;
 
     public void Initialize()
     {

@@ -18,7 +18,6 @@ public class Character : MonoBehaviour
     {
         Events.ChangeCharacter += ChangeCharacter;
         Events.OnCharacterAnim += OnCharacterAnim;
-        ChangeCharacter(Random.Range(0,3));
     }
 
     void OnDestroy()
@@ -27,10 +26,13 @@ public class Character : MonoBehaviour
         Events.OnCharacterAnim -= OnCharacterAnim;
     }
 
-    private void ChangeCharacter(int _chID)
+    private void ChangeCharacter(int _playerID, int _chID)
     {
-        this.characterID = _chID;
-        SetCharacter();
+        if (playerID == _playerID)
+        {
+            this.characterID = _chID;
+            SetCharacter();
+        }
     }
     private void SetCharacter()
     {
