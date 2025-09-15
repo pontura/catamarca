@@ -427,6 +427,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 824218420286108514, guid: 2579987aa6143624a877f8af3188603e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: bec265fa344832649a7ccbb3fc594fea, type: 2}
+    - target: {fileID: 1337921874482611262, guid: 2579987aa6143624a877f8af3188603e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5592290667732554013, guid: 2579987aa6143624a877f8af3188603e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -467,9 +475,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6539613620501634091, guid: 2579987aa6143624a877f8af3188603e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6678139535081705748, guid: 2579987aa6143624a877f8af3188603e, type: 3}
       propertyPath: m_Name
       value: MineScenario
+      objectReference: {fileID: 0}
+    - target: {fileID: 6678139535081705748, guid: 2579987aa6143624a877f8af3188603e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
