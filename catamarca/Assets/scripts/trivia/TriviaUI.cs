@@ -100,9 +100,15 @@ namespace Trivia
             bool isCorrect = CheckResult();
 
             if(isCorrect)
+            {
+                Events.OnCharacterAnim(game.playerID, Character.anims.right);
                 progressPoints[triviaID].SetState(ProgressPoint.states.done_ok);
+            }
             else
+            {
+                Events.OnCharacterAnim(game.playerID, Character.anims.wrong);
                 progressPoints[triviaID].SetState(ProgressPoint.states.done_wrong);
+            }
 
             Events.OnResponse(isCorrect);
             Invoke("Next", Data.Instance.gameData.data.delayForNextTrivia);
