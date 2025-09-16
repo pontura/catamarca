@@ -26,6 +26,9 @@ public class Data : MonoBehaviour
     }
     void Start()
     {
+#if !UNITY_EDITOR
+        Cursor.visible = false;
+#endif
         gameData.Load("data.json", OnDataDone);
     }
     void OnDataDone()
