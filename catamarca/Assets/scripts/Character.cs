@@ -1,4 +1,5 @@
 using UnityEngine;
+using static Character;
 
 public class Character : MonoBehaviour
 {
@@ -14,7 +15,8 @@ public class Character : MonoBehaviour
         lose,
         right,
         win,
-        wrong
+        wrong,
+        scroll
     }
     void Start()
     {
@@ -38,6 +40,7 @@ public class Character : MonoBehaviour
         {
             this.characterID = _chID;
             SetCharacter();
+            animators[characterID].Play("scroll");
         }
     }
     private void SetCharacter()
