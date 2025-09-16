@@ -1,5 +1,10 @@
+using System;
+using UnityEngine;
+
 public class Summary : BaseScreen
 {
+    [SerializeField] TMPro.TMP_Text field;
+
     private void Start()
     {
     }
