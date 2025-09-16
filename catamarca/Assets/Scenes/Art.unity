@@ -427,6 +427,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 254457328575521501, guid: 2579987aa6143624a877f8af3188603e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 254457328575521501, guid: 2579987aa6143624a877f8af3188603e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 395651587466232901, guid: 2579987aa6143624a877f8af3188603e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.079999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1389672452817655163, guid: 2579987aa6143624a877f8af3188603e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 49
+      objectReference: {fileID: 0}
+    - target: {fileID: 2907023140288697581, guid: 2579987aa6143624a877f8af3188603e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227542992014066843, guid: 2579987aa6143624a877f8af3188603e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 3841698551472063038, guid: 2579987aa6143624a877f8af3188603e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 4080108852242805103, guid: 2579987aa6143624a877f8af3188603e, type: 3}
+      propertyPath: m_SortingOrder
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4105973302917210122, guid: 2579987aa6143624a877f8af3188603e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 5592290667732554013, guid: 2579987aa6143624a877f8af3188603e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -467,9 +503,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6082173574450790041, guid: 2579987aa6143624a877f8af3188603e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 6473988135445706791, guid: 2579987aa6143624a877f8af3188603e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 66
+      objectReference: {fileID: 0}
     - target: {fileID: 6678139535081705748, guid: 2579987aa6143624a877f8af3188603e, type: 3}
       propertyPath: m_Name
       value: MineScenario
+      objectReference: {fileID: 0}
+    - target: {fileID: 7601757405966600332, guid: 2579987aa6143624a877f8af3188603e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 7632592020928138724, guid: 2579987aa6143624a877f8af3188603e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.079999
+      objectReference: {fileID: 0}
+    - target: {fileID: 7788125562495597485, guid: 2579987aa6143624a877f8af3188603e, type: 3}
+      propertyPath: m_SortingOrder
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8768670595077330662, guid: 2579987aa6143624a877f8af3188603e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
