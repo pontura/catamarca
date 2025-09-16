@@ -69,6 +69,7 @@ namespace Trivia
         void Delayed()
         {
             progressPoints[triviaID].SetState(ProgressPoint.states.on);
+            Events.OnCharacterAnim(game.playerID, Character.anims.idle);
         }
         public void OnSelect(TriviaButton button)
         {
@@ -93,7 +94,7 @@ namespace Trivia
         void StopGame()
         {
             timerUI.SetOff();
-            Invoke("CheckResultsDone", Data.Instance.gameData.data.delayResponseDone);
+            Invoke(nameof(CheckResultsDone), Data.Instance.gameData.data.delayResponseDone);
         }
         void CheckResultsDone()
         {
@@ -111,7 +112,7 @@ namespace Trivia
             }
 
             Events.OnResponse(isCorrect);
-            Invoke("Next", Data.Instance.gameData.data.delayForNextTrivia);
+            Invoke(nameof(Next), Data.Instance.gameData.data.delayForNextTrivia);
         }
         void Next()
         {
