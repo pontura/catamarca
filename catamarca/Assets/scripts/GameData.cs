@@ -10,6 +10,7 @@ public class GameData : MonoBehaviour
     [Serializable]
     public class Data
     {
+        public float gameOverDuration;
         public int totalQuestions;
         public float delayForNextTrivia;
         public float delayResponseDone;

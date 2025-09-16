@@ -3,6 +3,7 @@
 	"delayForNextTrivia":2,
 	"delayResponseDone":0.1,
 	"questionDuration":10,
+	"gameOverDuration":3,
 	"wrong_answers":
 	[
 		"¡Ups! No es esa. Probá otra vez.",

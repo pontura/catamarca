@@ -7,9 +7,11 @@ public class TimerUI : MonoBehaviour
     bool isOn;
     float timer;
     float duration;
+    int playerID;
 
-    public void Init(float duration)
+    public void Init(float duration, int playerID)
     {
+        this.playerID = playerID;
         isOn = true;
         timer = 0;
         this.duration = duration;
@@ -28,7 +30,7 @@ public class TimerUI : MonoBehaviour
         {
             v = 0; 
             SetOff();
-            Events.OnTimeOver();
+            Events.OnTimeOver(playerID);
         }
         progress.fillAmount = v;
     }

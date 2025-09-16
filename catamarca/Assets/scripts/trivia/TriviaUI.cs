@@ -40,7 +40,7 @@ namespace Trivia
         }
         public void InitTrivia(TriviaData.Question question)
         {
-            timerUI.Init(Data.Instance.gameData.data.questionDuration);
+            timerUI.Init(Data.Instance.gameData.data.questionDuration, game.playerID);
             okResponse = Data.Instance.triviaData.data.questions[triviaID].results[0].response;          
 
             field.text = question.title;
