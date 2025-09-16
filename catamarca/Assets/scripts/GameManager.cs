@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] BaseScreen[] screens;
     [SerializeField] int screenID;
     public int playerID = 0;
+    public int score;
 
     public void Initialize()
     {
@@ -35,10 +36,15 @@ public class GameManager : MonoBehaviour
         foreach (BaseScreen s in screens)
             s.Show(false);
     }
-
-
-
-
-   
-
+    public void ResetScore()
+    {
+        this.score = 0;
+    }
+    public void AddScore(bool isCorrect)
+    {
+        if(isCorrect)
+            this.score += 1;
+        else
+            this.score -= 1;
+    }
 }

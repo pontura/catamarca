@@ -99,7 +99,7 @@ namespace Trivia
         void CheckResultsDone()
         {
             bool isCorrect = CheckResult();
-
+            game.AddScore(isCorrect);
             if(isCorrect)
             {
                 Events.OnCharacterAnim(game.playerID, Character.anims.right);

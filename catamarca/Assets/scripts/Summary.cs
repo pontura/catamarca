@@ -13,9 +13,16 @@ public class Summary : BaseScreen
     }
     public override void OnShow()
     {
-        Events.OnCharacterAnim(game.playerID, Character.anims.win);
         print("summary OnShow");
         Invoke("Ready", Data.Instance.gameData.data.gameOverDuration);
+        int score = game.score;
+
+        if(score>=3)
+            Events.OnCharacterAnim(game.playerID, Character.anims.win);
+        else
+            Events.OnCharacterAnim(game.playerID, Character.anims.lose);
+
+        game.ResetScore();
     }
     void Ready()
     {
