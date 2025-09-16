@@ -13,11 +13,10 @@ public class Summary : BaseScreen
     }
     public override void OnShow()
     {
-        print("summary OnShow");
         Invoke("Ready", Data.Instance.gameData.data.gameOverDuration);
         int score = game.score;
 
-        if(score>=3)
+        if(score>=Data.Instance.gameData.data.totalQuestions/2)
             Events.OnCharacterAnim(game.playerID, Character.anims.win);
         else
             Events.OnCharacterAnim(game.playerID, Character.anims.lose);

@@ -44,7 +44,5 @@ public class GameManager : MonoBehaviour
     {
         if(isCorrect)
             this.score += 1;
-        else
-            this.score -= 1;
     }
 }
