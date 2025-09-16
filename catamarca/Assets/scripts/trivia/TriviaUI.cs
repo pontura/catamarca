@@ -21,7 +21,20 @@ namespace Trivia
         int triviaID;
 
         string okResponse;
+        private void Start()
+        {
+            Events.OnTimeOver += OnTimeOver;
+        }
+        private void OnDestroy()
+        {
+            Events.OnTimeOver += OnTimeOver;
+        }
+        private void OnTimeOver(int _playerID)
+        {
+            if (_playerID != game.playerID) return;
+            StopGame();
 
+        }
         public override void OnShow()
         {
             print("Trivia OnShow");
@@ -83,7 +96,12 @@ namespace Trivia
         }
         public bool CheckResult()
         {
-            bool isCorrect = okResponse == resultDone.response;
+            bool isCorrect = false;
+            if (resultDone != null)
+            {
+                isCorrect = okResponse == resultDone.response;
+                resultDone = null;
+            }
             foreach (TriviaButton b in buttons)
             {
                 b.SetResult(b.result.response == okResponse);
