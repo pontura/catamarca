@@ -630,14 +630,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: p1
       objectReference: {fileID: 0}
-    - target: {fileID: 4454638606262801334, guid: abcfdc412b818884599969f86205bacd, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 16777215
-      objectReference: {fileID: 0}
-    - target: {fileID: 4475014891329227544, guid: abcfdc412b818884599969f86205bacd, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7164861642049919310, guid: abcfdc412b818884599969f86205bacd, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
