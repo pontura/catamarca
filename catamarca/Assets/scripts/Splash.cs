@@ -16,6 +16,8 @@ public class Splash : BaseScreen
     }
     public void OnClcked()
     {
+        //YaguarLib.Events.Events.OnPlaySoundInChannel(YaguarLib.Audio.AudioManager.types.UI_GENERIC, YaguarLib.Audio.AudioManager.channels.UI);
+        game.PlaySfx("click");
         game.NextScreen();
     }
 }

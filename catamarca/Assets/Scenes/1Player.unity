@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 121148230}
   - component: {fileID: 121148228}
   - component: {fileID: 121148229}
+  - component: {fileID: 121148231}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -274,6 +275,14 @@ MonoBehaviour:
   gameData: {fileID: 121148229}
   game1: {fileID: 1464039276}
   game2: {fileID: 504280233}
+--- !u!81 &121148231
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121148221}
+  m_Enabled: 1
 --- !u!1001 &504280231
 PrefabInstance:
   m_ObjectHideFlags: 0

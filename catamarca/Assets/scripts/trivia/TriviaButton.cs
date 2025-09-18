@@ -12,11 +12,14 @@ namespace Trivia
         TriviaUI triviaUI;
         public TriviaData.Result result;
         bool selected;
+
+        System.Action<bool> OnDone;
+
         void Start()
         {
             anim = GetComponent<Animator>();          
         }
-        public void Init(TriviaUI triviaUI, int id, TriviaData.Result result)
+        public void Init(TriviaUI triviaUI, int id, TriviaData.Result result, System.Action<bool> onDone)
         {
             this.result = result;
             this.triviaUI = triviaUI;
@@ -26,6 +29,7 @@ namespace Trivia
                 selected = true;
                 this.triviaUI.OnSelect(this);
             });
+            OnDone = onDone;
         }
         public void SetInteraction(bool isOn)
         {
@@ -42,16 +46,20 @@ namespace Trivia
         {
             if (isCorrect)
             {
-                if(selected)
+                if (selected) {
+                    //YaguarLib.Events.Events.OnPlaySoundInChannel(YaguarLib.Audio.AudioManager.types.REWARD, YaguarLib.Audio.AudioManager.channels.UI);
+                    OnDone(true);
                     anim.Play("CorrectSelected");
-                else
+                } else
                     anim.Play("CorrectUnselected");
             }
             else
             {
-                if (selected)
+                if (selected) {
+                    //YaguarLib.Events.Events.OnPlaySoundInChannel(YaguarLib.Audio.AudioManager.types.WRONG, YaguarLib.Audio.AudioManager.channels.UI);
+                    OnDone(false);
                     anim.Play("IncorrectSelected");
-                else
+                } else
                     anim.Play("Disabled");
             }
         }

@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] int screenID;
     public int playerID = 0;
     public int score;
+    [SerializeField] YaguarLib.Audio.IngameAudio ingameAudio;
 
     public void Initialize()
     {
@@ -44,5 +45,9 @@ public class GameManager : MonoBehaviour
     {
         if(isCorrect)
             this.score += 1;
+    }
+
+    public void PlaySfx(string key) {
+        ingameAudio.Play(key);
     }
 }

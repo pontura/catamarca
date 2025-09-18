@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04cc9302f07e2ce4494c8a7ffe15d372, type: 3}
+  m_Name: SoundLibrary
+  m_EditorClassIdentifier: 
+  audioClips:
+  - key: click
+    clip: {fileID: 8300000, guid: 5686b8dc8c376e44faf297ed677c7a67, type: 3}
+    vol: 1
+  - key: scroll
+    clip: {fileID: 8300000, guid: 7f848e89af1f6ee4baf4ba1d4183be17, type: 3}
+    vol: 1
+  - key: right
+    clip: {fileID: 8300000, guid: 1e2db0301160ea942be5e85aebbcbc94, type: 3}
+    vol: 1
+  - key: wrong
+    clip: {fileID: 8300000, guid: 11bc8e7ed435a874bb8dab93ce456bfa, type: 3}
+    vol: 1
+  vo_win: []
+  vo_correct: []
+  vo_wrong: []
+  audioClipGroups: []

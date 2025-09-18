@@ -12,6 +12,8 @@ public class PlayerSelector : BaseScreen
     }
     public void OnSelect(int p)
     {
+        //YaguarLib.Events.Events.OnPlaySoundInChannel(YaguarLib.Audio.AudioManager.types.UI_SWIPE, YaguarLib.Audio.AudioManager.channels.UI);
+        game.PlaySfx("scroll");
         if (p == 1) playerID++;
         else playerID--;
         if (playerID > 2) playerID = 0;
@@ -20,6 +22,8 @@ public class PlayerSelector : BaseScreen
     }
     public void StartGame()
     {
+        //YaguarLib.Events.Events.OnPlaySoundInChannel(YaguarLib.Audio.AudioManager.types.UI_GENERIC, YaguarLib.Audio.AudioManager.channels.UI);
+        game.PlaySfx("click");
         game.NextScreen();
     }
 }

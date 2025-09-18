@@ -79,7 +79,7 @@ namespace Trivia
             foreach (TriviaData.Result result in results)
             {
                 TriviaButton b = Instantiate(button, container);
-                b.Init(this, buttonId, result);
+                b.Init(this, buttonId, result, ResponseSfx);
                 buttonId++;
                 buttons.Add(b);
             }
@@ -96,6 +96,11 @@ namespace Trivia
                 b.OnSelected(b == button);
             }
             StopGame(); 
+        }
+
+        void ResponseSfx(bool correct) {
+            string key = correct ? "right" : "wrong";
+            game.PlaySfx(key);
         }
         public bool CheckResult()
         {
