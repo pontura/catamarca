@@ -32,6 +32,10 @@ namespace Trivia
         private void OnTimeOver(int _playerID)
         {
             if (_playerID != game.playerID) return;
+            foreach (TriviaButton b in buttons)
+            {
+                b.SetInteraction(false);
+            }
             StopGame();
 
         }
