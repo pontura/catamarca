@@ -45,7 +45,10 @@ namespace Trivia
             {
                 ProgressPoint p = Instantiate(progressPoint, progressPointsContainer);
                 progressPoints.Add(p);
-                p.SetState(ProgressPoint.states.off);
+                if(a == 0)
+                    p.SetState(ProgressPoint.states.on);
+                else
+                    p.SetState(ProgressPoint.states.off);
             }
           
 
