@@ -19,11 +19,12 @@ namespace YaguarLib.Audio
         public enum types
         {
             UI_GENERIC,
-            UI_SWIPE,
-            TRANSITION,
+            UI_SWIPE,            
             REWARD,
+            WRONG,
             POPUP,
             CANCEL,
+            TRANSITION,
             UNLOCK,
             STAR,
             NONE
