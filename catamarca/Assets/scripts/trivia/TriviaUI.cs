@@ -77,10 +77,6 @@ namespace Trivia
                 buttons.Add(b);
             }
             print("InitTrivia" + triviaID);
-            Invoke("Delayed", 0.1f);
-        }
-        void Delayed()
-        {
             progressPoints[triviaID].SetState(ProgressPoint.states.on);
             Events.OnCharacterAnim(game.playerID, Character.anims.idle);
         }

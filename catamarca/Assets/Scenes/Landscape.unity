@@ -352,6 +352,10 @@ PrefabInstance:
       propertyPath: m_Texture
       value: 
       objectReference: {fileID: 8400000, guid: e935ce040950f5748aeca1d75d216888, type: 2}
+    - target: {fileID: 1250356059664765310, guid: abcfdc412b818884599969f86205bacd, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3010923484597430694, guid: abcfdc412b818884599969f86205bacd, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -1033,6 +1037,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 121148225}
     m_Modifications:
+    - target: {fileID: 1250356059664765310, guid: abcfdc412b818884599969f86205bacd, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3010923484597430694, guid: abcfdc412b818884599969f86205bacd, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
