@@ -2,10 +2,10 @@
 	"totalQuestions":6,
 	"delayForNextTrivia":2,
 	"delayResponseDone":0.1,
-	"questionDuration":10,
+	"questionDuration":5,
 	"gameOverDuration":3,
 	
-	"intro":"Descripcion del juego Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+	"intro":"Rosita, la hermana pequeña de la super banda ha perdido dentro de la mina. La súper banda de minería debe entrar en acción lo antes posible para encontrarla. ¡Acuérdense de que el tiempo es “oro”!",
 	"intro_button": "Empezar",
 	"choose": "Elegir",
 	
@@ -24,7 +24,7 @@
 	
 	
 	
-	"intro_en":"EN Descripcion del juego Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+	"intro_en":"EN Rosita, la hermana pequeña de la super banda ha perdido dentro de la mina. La súper banda de minería debe entrar en acción lo antes posible para encontrarla. ¡Acuérdense de que el tiempo es “oro”!",
 	"intro_button_en": "Start",
 	"choose_en": "This one!",
 	
