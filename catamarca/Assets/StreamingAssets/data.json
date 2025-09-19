@@ -5,6 +5,8 @@
 	"questionDuration":10,
 	"gameOverDuration":3,
 	
+	"intro":"Descripcion del juego Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+	
 	"intro_title_p1":"Titulo 1",
 	"intro_desc_p1":"Descripción del título 1",	
 	
@@ -12,8 +14,25 @@
 	"intro_desc_p2":"Descripción del título 2",	
 	
 	"intro_title_p3":"Titulo 3",
-	"intro_desc_p3":"Descripción del título 3",
+	"intro_desc_p3":"Descripción del título 3",	
 	
 	"end_win":"Bien",
-	"end_lose":"Mal"
+	"end_lose":"Mal",
+	
+	
+	
+	
+	"intro_en":"EN Descripcion del juego Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+	
+	"intro_title_p1_en":"EN Titulo 1",
+	"intro_desc_p1_en":"EN Descripción del título 1",	
+	
+	"intro_title_p2_en":"EN Titulo 2",
+	"intro_desc_p2_en":"EN Descripción del título 2",	
+	
+	"intro_title_p3_en":"EN Titulo 3",
+	"intro_desc_p3_en":"EN Descripción del título 3",
+	
+	"end_win_en":"Bien",
+	"end_lose_en":"Mal"
 }

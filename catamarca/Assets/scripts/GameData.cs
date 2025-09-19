@@ -16,6 +16,8 @@ public class GameData : MonoBehaviour
         public float delayResponseDone;
         public float questionDuration;
 
+        public string intro;
+
         public string intro_title_p1;
         public string intro_desc_p1;
 
@@ -27,6 +29,20 @@ public class GameData : MonoBehaviour
 
         public string end_win;
         public string end_lose;
+
+        public string intro_en;
+
+        public string intro_title_p1_en;
+        public string intro_desc_p1_en;
+
+        public string intro_title_p2_en;
+        public string intro_desc_p2_en;
+
+        public string intro_title_p3_en;
+        public string intro_desc_p3_en;
+
+        public string end_win_en;
+        public string end_lose_en;
 
         public string[] wrong_answers;
     }

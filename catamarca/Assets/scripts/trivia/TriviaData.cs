@@ -7,7 +7,9 @@ namespace Trivia
 {
     public class TriviaData : MonoBehaviour
     {
-        public langs lang;
+        public langs lang_p1;
+        public langs lang_p2;
+
         public enum langs
         {
             es,
@@ -16,9 +18,21 @@ namespace Trivia
         [SerializeField] Data _data_es;
         [SerializeField] Data _data_en;
 
-        public Data data  { 
-            get { 
-                if(lang == langs.es) 
+        public langs GetLang(int p)
+        {
+            if (p == 1) 
+                return lang_p1;
+            return lang_p2;
+        }
+        public Data GetData(int p)  { 
+            if(p == 1)
+            { 
+                if(lang_p1 == langs.es) 
+                    return _data_es;
+                else return _data_en;
+            } else
+            {
+                if (lang_p2 == langs.es)
                     return _data_es;
                 else return _data_en;
             }
@@ -73,9 +87,12 @@ namespace Trivia
                 OnLoaded();
             }
         }
-        public void SetLang(langs lang)
+        public void SetLang(int p, langs lang)
         {
-            this.lang = lang;
+            if(p == 1)
+                this.lang_p1 = lang;
+            else
+                this.lang_p2 = lang;
         }
     }
 }

@@ -19,12 +19,20 @@ public class Summary : BaseScreen
         if(score>=Data.Instance.gameData.data.totalQuestions/2)
         {
             Events.OnCharacterAnim(game.playerID, Character.anims.win);
-            field.text = Data.Instance.gameData.data.end_win;
+
+            if (Data.Instance.triviaData.GetLang(game.playerID) == Trivia.TriviaData.langs.es)
+                field.text = Data.Instance.gameData.data.end_win;
+            else
+                field.text = Data.Instance.gameData.data.end_win_en;
         }
         else
         {
             Events.OnCharacterAnim(game.playerID, Character.anims.lose);
-            field.text = Data.Instance.gameData.data.end_lose;
+
+            if (Data.Instance.triviaData.GetLang(game.playerID) == Trivia.TriviaData.langs.es)
+                field.text = Data.Instance.gameData.data.end_lose;
+            else
+                field.text = Data.Instance.gameData.data.end_lose_en;
         }
 
         game.ResetScore();

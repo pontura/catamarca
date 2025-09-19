@@ -16,20 +16,42 @@ public class PlayerSelector : BaseScreen
     }
     void SetTexts()
     {
-        switch (playerID)
+
+        if (Data.Instance.triviaData.GetLang(game.playerID) == Trivia.TriviaData.langs.es)
         {
-            case 0:
-                title.text = Data.Instance.gameData.data.intro_title_p1;
-                field.text = Data.Instance.gameData.data.intro_desc_p1;
-                break;
-            case 1:
-                title.text = Data.Instance.gameData.data.intro_title_p2;
-                field.text = Data.Instance.gameData.data.intro_desc_p2;
-                break;
-            case 2:
-                title.text = Data.Instance.gameData.data.intro_title_p3;
-                field.text = Data.Instance.gameData.data.intro_desc_p3;
-                break;
+            switch (playerID)
+            {
+                case 0:
+                    title.text = Data.Instance.gameData.data.intro_title_p1;
+                    field.text = Data.Instance.gameData.data.intro_desc_p1;
+                    break;
+                case 1:
+                    title.text = Data.Instance.gameData.data.intro_title_p2;
+                    field.text = Data.Instance.gameData.data.intro_desc_p2;
+                    break;
+                case 2:
+                    title.text = Data.Instance.gameData.data.intro_title_p3;
+                    field.text = Data.Instance.gameData.data.intro_desc_p3;
+                    break;
+            }
+        }
+        else
+        {
+            switch (playerID)
+            {
+                case 0:
+                    title.text = Data.Instance.gameData.data.intro_title_p1_en;
+                    field.text = Data.Instance.gameData.data.intro_desc_p1_en;
+                    break;
+                case 1:
+                    title.text = Data.Instance.gameData.data.intro_title_p2_en;
+                    field.text = Data.Instance.gameData.data.intro_desc_p2_en;
+                    break;
+                case 2:
+                    title.text = Data.Instance.gameData.data.intro_title_p3_en;
+                    field.text = Data.Instance.gameData.data.intro_desc_p3_en;
+                    break;
+            }
         }
     }
     public void OnSelect(int p)

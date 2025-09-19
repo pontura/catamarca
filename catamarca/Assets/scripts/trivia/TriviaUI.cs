@@ -56,12 +56,12 @@ namespace Trivia
             }
           
 
-            InitTrivia(Data.Instance.triviaData.data.questions[triviaID]);           
+            InitTrivia(Data.Instance.triviaData.GetData(game.playerID).questions[triviaID]);           
         }
         public void InitTrivia(TriviaData.Question question)
         {
             timerUI.Init(Data.Instance.gameData.data.questionDuration, game.playerID);
-            okResponse = Data.Instance.triviaData.data.questions[triviaID].results[0].response;          
+            okResponse = Data.Instance.triviaData.GetData(game.playerID).questions[triviaID].results[0].response;          
 
             field.text = question.title;
 
@@ -71,7 +71,7 @@ namespace Trivia
             buttons = new List<TriviaButton>();
 
             results = new List<TriviaData.Result>();
-            foreach (TriviaData.Result result in Data.Instance.triviaData.data.questions[triviaID].results)
+            foreach (TriviaData.Result result in Data.Instance.triviaData.GetData(game.playerID).questions[triviaID].results)
             {
                 results.Add(result);
             }
@@ -148,7 +148,7 @@ namespace Trivia
                 triviaID = 0;
                 TriviaComplete();
             } else
-                InitTrivia(Data.Instance.triviaData.data.questions[triviaID]);
+                InitTrivia(Data.Instance.triviaData.GetData(game.playerID).questions[triviaID]);
         }
         void TriviaComplete()
         {
