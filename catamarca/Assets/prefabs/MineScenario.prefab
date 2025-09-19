@@ -21607,7 +21607,7 @@ MonoBehaviour:
   - {fileID: 7132790723074799199}
   - {fileID: 5839389460542838525}
   - {fileID: 1826687855244365544}
-  playerID: 1
+  playerID: 0
 --- !u!1 &6781862960481585272
 GameObject:
   m_ObjectHideFlags: 0
@@ -36667,7 +36667,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 8400000, guid: e935ce040950f5748aeca1d75d216888, type: 2}
+  m_TargetTexture: {fileID: 8400000, guid: 4587c3054886faa49a24267a3ce258ab, type: 2}
   m_TargetDisplay: 0
   m_TargetEye: 0
   m_HDR: 1
