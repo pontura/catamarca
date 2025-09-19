@@ -290,14 +290,14 @@ GameObject:
   m_Component:
   - component: {fileID: 2755545765445405925}
   - component: {fileID: 700269123808614934}
-  - component: {fileID: 110861542264431354}
+  - component: {fileID: 7877259702361492289}
   m_Layer: 5
   m_Name: intro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2755545765445405925
 RectTransform:
   m_ObjectHideFlags: 0
@@ -336,7 +336,7 @@ MonoBehaviour:
   game: {fileID: 0}
   field: {fileID: 4803887517080118527}
   buttonField: {fileID: 8226892119449040416}
---- !u!95 &110861542264431354
+--- !u!95 &7877259702361492289
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -1301,7 +1301,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5714134938478402377, guid: 15ae38eca1ee84040a4d318c65245a25, type: 3}
+  m_Sprite: {fileID: 8779687402134152461, guid: b366ab9e06b4ecb4c8378988e2c93fc4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1526,7 +1526,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8779687402134152461, guid: b366ab9e06b4ecb4c8378988e2c93fc4, type: 3}
+  m_Sprite: {fileID: -5714134938478402377, guid: 15ae38eca1ee84040a4d318c65245a25, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
