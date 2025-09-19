@@ -23,6 +23,7 @@ public class Character : MonoBehaviour
     {
         Events.ResetApp += ResetApp;
         Events.ChangeCharacter += ChangeCharacter;
+        Events.OnCharacterAnim += OnCharacterAnim;
         Events.OnWin += OnWin;
         ResetApp();
     }
@@ -31,7 +32,7 @@ public class Character : MonoBehaviour
     {
         Events.ResetApp -= ResetApp;
         Events.ChangeCharacter += ChangeCharacter;
-        Events.ChangeCharacter -= ChangeCharacter;
+        Events.OnCharacterAnim -= OnCharacterAnim;
         Events.OnWin -= OnWin;
     }
     void OnWin(bool won)
