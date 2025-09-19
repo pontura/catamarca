@@ -3,6 +3,7 @@ using static Character;
 
 public class Character : MonoBehaviour
 {
+    [SerializeField] GameObject winSummary;
     [SerializeField] GameObject damage;
     [SerializeField] Animator bg;
     [SerializeField] int characterID;
@@ -22,7 +23,7 @@ public class Character : MonoBehaviour
     {
         Events.ResetApp += ResetApp;
         Events.ChangeCharacter += ChangeCharacter;
-        Events.OnCharacterAnim += OnCharacterAnim;
+        Events.OnWin += OnWin;
         ResetApp();
     }
 
@@ -31,9 +32,12 @@ public class Character : MonoBehaviour
         Events.ResetApp -= ResetApp;
         Events.ChangeCharacter += ChangeCharacter;
         Events.ChangeCharacter -= ChangeCharacter;
-        Events.OnCharacterAnim -= OnCharacterAnim;
+        Events.OnWin -= OnWin;
     }
-
+    void OnWin(bool won)
+    {
+        winSummary.SetActive(won);
+    }
     private void ChangeCharacter(int _playerID, int _chID)
     {
         if (playerID == _playerID)
@@ -51,6 +55,7 @@ public class Character : MonoBehaviour
     }
     void ResetApp()
     {
+        winSummary.SetActive(false);
         damage.SetActive(false);
         damageNum = 0;
         gameObject.SetActive(false);
