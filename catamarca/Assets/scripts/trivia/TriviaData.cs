@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
@@ -7,6 +8,7 @@ namespace Trivia
 {
     public class TriviaData : MonoBehaviour
     {
+        public List<Sprite> sprites;
         public langs lang_p1;
         public langs lang_p2;
 
@@ -18,6 +20,12 @@ namespace Trivia
         [SerializeField] Data _data_es;
         [SerializeField] Data _data_en;
 
+        public Sprite GetSprite(int id)
+        {
+            int arrID = id;
+            if (arrID >= sprites.Count) arrID = 0;
+            return sprites[arrID];
+        }
         public langs GetLang(int p)
         {
             if (p == 1) 

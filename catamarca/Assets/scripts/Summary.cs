@@ -16,7 +16,7 @@ public class Summary : BaseScreen
         Invoke("Ready", Data.Instance.gameData.data.gameOverDuration);
         int score = game.score;
 
-        if(score>=Data.Instance.gameData.data.totalQuestions/2)
+        if(score>= (Data.Instance.gameData.data.totalQuestions+(Data.Instance.gameData.data.totalQuestions/2) ) /2)
         {
             Events.OnCharacterAnim(game.playerID, Character.anims.win);
 

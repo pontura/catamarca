@@ -1,11 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using YaguarLib.UI;
 
 namespace Trivia
 {
     public class TriviaUI : BaseScreen
     {
+        [SerializeField] Image image;
         [SerializeField] TMPro.TMP_Text field;
         [SerializeField] Transform container;
         [SerializeField] TriviaButton button;
@@ -131,11 +133,14 @@ namespace Trivia
             game.AddScore(isCorrect);
             if(isCorrect)
             {
+                GetComponent<Animator>().Play("right");
+                image.sprite = Data.Instance.triviaData.GetSprite(triviaID);
                 Events.OnCharacterAnim(game.playerID, Character.anims.right);
                 progressPoints[triviaID].SetState(ProgressPoint.states.done_ok);
             }
             else
             {
+                GetComponent<Animator>().Play("wrong");
                 Events.OnCharacterAnim(game.playerID, Character.anims.wrong);
                 progressPoints[triviaID].SetState(ProgressPoint.states.done_wrong);
             }
