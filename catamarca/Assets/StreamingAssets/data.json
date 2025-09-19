@@ -4,11 +4,13 @@
 	"delayResponseDone":0.1,
 	"questionDuration":10,
 	"gameOverDuration":3,
-	"wrong_answers":
-	[
-		"¡Ups! No es esa. Probá otra vez.",
-		"Casi, pero no. Volvé a intentarlo.",
-		"Esa se escapó... buscá de nuevo.",
-		"Mmm... no. Probemos otra opción."
-	]
+	
+	"intro_title_p1":"Titulo 1",
+	"intro_desc_p1":"Descripción del título 1",	
+	
+	"intro_title_p2":"Titulo 2",
+	"intro_desc_p2":"Descripción del título 2",	
+	
+	"intro_title_p3":"Titulo 3",
+	"intro_desc_p3":"Descripción del título 3"
 }
