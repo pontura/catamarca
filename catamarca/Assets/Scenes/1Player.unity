@@ -238,6 +238,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8680ffd59dc270c45b41f52c853bc978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: -855298285791758126, guid: 34eb914cf62261e4281b06316524df5c, type: 3}
+  - {fileID: 6937817954938267909, guid: 2d4e1d16187109b4e829d367f48b26d2, type: 3}
+  - {fileID: -6470460504253458178, guid: a114abd542fc8d6478b4e03cd26ac6bd, type: 3}
+  - {fileID: -4178046375966092550, guid: 708e151858e849f45b182cd607f5c053, type: 3}
   lang_p1: 0
   lang_p2: 0
   _data_es:
