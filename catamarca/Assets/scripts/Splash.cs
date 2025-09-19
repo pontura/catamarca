@@ -14,8 +14,12 @@ public class Splash : BaseScreen
     {
         Events.ResetApp();
     }
-    public void OnClcked()
+    public void OnClicked(int langID)
     {
+        if (langID == 1)
+            Data.Instance.triviaData.SetLang(Trivia.TriviaData.langs.es);
+        else
+            Data.Instance.triviaData.SetLang(Trivia.TriviaData.langs.en);
         //YaguarLib.Events.Events.OnPlaySoundInChannel(YaguarLib.Audio.AudioManager.types.UI_GENERIC, YaguarLib.Audio.AudioManager.channels.UI);
         game.PlaySfx("click");
         game.NextScreen();

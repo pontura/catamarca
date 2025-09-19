@@ -7,8 +7,24 @@ namespace Trivia
 {
     public class TriviaData : MonoBehaviour
     {
-        public Data data;
+        public langs lang;
+        public enum langs
+        {
+            es,
+            en
+        }
+        [SerializeField] Data _data_es;
+        [SerializeField] Data _data_en;
 
+        public Data data  { 
+            get { 
+                if(lang == langs.es) 
+                    return _data_es;
+                else return _data_en;
+            }
+        }
+
+        bool en_loaded;
         [Serializable]
         public class Data
         {
@@ -45,8 +61,21 @@ namespace Trivia
             {
                 json = File.ReadAllText(path);
             }
-            data = JsonUtility.FromJson<Data>(json);
-            OnLoaded();
+            if(!en_loaded)
+            {
+                _data_es = JsonUtility.FromJson<Data>(json);
+                en_loaded = true;
+                Load("trivia_en.json", OnLoaded);
+            }
+            else
+            {                
+                _data_en = JsonUtility.FromJson<Data>(json);
+                OnLoaded();
+            }
+        }
+        public void SetLang(langs lang)
+        {
+            this.lang = lang;
         }
     }
 }
