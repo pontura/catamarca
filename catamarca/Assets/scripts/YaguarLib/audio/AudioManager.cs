@@ -11,7 +11,8 @@ namespace YaguarLib.Audio
         public enum channels
         {
             UI,
-            GAME,
+            GAME1,
+            GAME2,
             MUSIC,
             VOICES,
             BACKGROUND
@@ -162,7 +163,7 @@ namespace YaguarLib.Audio
         }
         void OnPlaySound(types type)
         {
-            OnPlaySoundInChannel(type, channels.GAME);
+            OnPlaySoundInChannel(type, channels.UI);
         }
         void OnPlaySoundInChannel(types type, channels channel)
         {
@@ -198,7 +199,7 @@ namespace YaguarLib.Audio
             PlaySound(allClips[UnityEngine.Random.Range(0, allClips.Length)]);
         }
 
-        public void PlaySound(AudioClip audioClip, channels channel = channels.GAME, float volume = 1f, bool loop = false, bool noRepeat = false)
+        public void PlaySound(AudioClip audioClip, channels channel = channels.UI, float volume = 1f, bool loop = false, bool noRepeat = false)
         {
             if (!CanPlay()) return;
             AudioSource audioSource = GetAudioSource(channel); if (audioSource == null) return;

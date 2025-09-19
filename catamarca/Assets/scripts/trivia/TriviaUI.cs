@@ -31,7 +31,8 @@ namespace Trivia
         }
         private void OnTimeOver(int _playerID)
         {
-            if (_playerID != game.playerID) return;
+            if (_playerID != game.playerID) return;            
+            game.PlaySfx("timeout");
             foreach (TriviaButton b in buttons)
             {
                 b.SetInteraction(false);
@@ -54,12 +55,13 @@ namespace Trivia
                 else
                     p.SetState(ProgressPoint.states.off);
             }
-          
 
+            game.PlaySfx("trivia_entry");
             InitTrivia(Data.Instance.triviaData.GetData(game.playerID).questions[triviaID]);           
         }
         public void InitTrivia(TriviaData.Question question)
         {
+            game.PlaySfx("timer", true);
             timerUI.Init(Data.Instance.gameData.data.questionDuration, game.playerID);
             okResponse = Data.Instance.triviaData.GetData(game.playerID).questions[triviaID].results[0].response;          
 
@@ -120,6 +122,7 @@ namespace Trivia
         void StopGame()
         {
             timerUI.SetOff();
+            game.StopLoopSfx();
             Invoke(nameof(CheckResultsDone), Data.Instance.gameData.data.delayResponseDone);
         }
         void CheckResultsDone()

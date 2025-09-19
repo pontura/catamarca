@@ -11,11 +11,11 @@ namespace YaguarLib.Audio
         [SerializeField] SoundLibrary soundLibrary;
         [SerializeField] AudioSource source;
         
-        public void Play(string key) {
+        public void Play(string key, bool loop=false) {
             ClipData cp = soundLibrary.GetClip(key);
             if (cp == null)
                 return;
-            AudioManager.Instance.PlaySound(source, cp.clip, cp.vol);
+            AudioManager.Instance.PlaySound(source, cp.clip, cp.vol, loop:loop);
         }
 
         public void PlayOneShot(string key) {

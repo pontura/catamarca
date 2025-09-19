@@ -47,7 +47,21 @@ public class GameManager : MonoBehaviour
             this.score += 1;
     }
 
-    public void PlaySfx(string key) {
-        ingameAudio.Play(key);
+    public void PlaySfx(string key, bool loop=false) {
+        if (loop) {
+            YaguarLib.Audio.AudioManager.channels channel = playerID == 0 ? YaguarLib.Audio.AudioManager.channels.GAME1 : YaguarLib.Audio.AudioManager.channels.GAME2;
+            float pitch = playerID == 0 ? 0.95f : 1.05f;
+            YaguarLib.Audio.AudioManager.Instance.ChangePitch(channel, pitch);
+            ingameAudio.Play(key, channel, loop: loop);
+        } else {
+            ingameAudio.Play(key);
+        }
     }
+
+    public void StopLoopSfx() {
+        YaguarLib.Audio.AudioManager.channels channel = playerID == 0 ? YaguarLib.Audio.AudioManager.channels.GAME1 : YaguarLib.Audio.AudioManager.channels.GAME2;
+        YaguarLib.Audio.AudioManager.Instance.StopChannel(channel);
+        YaguarLib.Audio.AudioManager.Instance.ChangePitch(channel, 1f);
+    }
+
 }
