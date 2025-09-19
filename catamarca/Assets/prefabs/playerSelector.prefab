@@ -206,6 +206,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   game: {fileID: 0}
+  title: {fileID: 0}
+  field: {fileID: 0}
+  buttonField: {fileID: 0}
 --- !u!1 &3198042122840300154
 GameObject:
   m_ObjectHideFlags: 0
@@ -781,8 +784,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 180, y: 244}
-  m_SizeDelta: {x: 532.4, y: 126.1}
+  m_AnchoredPosition: {x: 233, y: 68}
+  m_SizeDelta: {x: 562, y: 469.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6322654829907196013
 CanvasRenderer:
@@ -812,7 +815,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Algunos datos de la vida y obra de Rock Stone.
+  m_text: Algunos datos de la vida y obra de Rock Stone. Algunos datos de la vida
+    y obra de Rock Stone. Algunos datos de la vida y obra de Rock Stone. Algunos
+    datos de la vida y obra de Rock Stone.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4225b292a0d421542988124a863318f9, type: 2}
   m_sharedMaterial: {fileID: -2639424614911388287, guid: 4225b292a0d421542988124a863318f9, type: 2}
@@ -839,14 +844,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36.5
+  m_fontSize: 33.9
   m_fontSizeBase: 102.8
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 36.5
+  m_fontSizeMax: 33.9
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1132,7 +1137,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 177.00002, y: 4.0000153}
+  m_AnchoredPosition: {x: 0, y: -363}
   m_SizeDelta: {x: 312.37, y: 90.98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1887689688663440463
@@ -1286,7 +1291,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 180, y: 391}
-  m_SizeDelta: {x: 339.3, y: 117}
+  m_SizeDelta: {x: 460.28, y: 139.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4856886355201609590
 CanvasRenderer:
@@ -1343,14 +1348,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42.8
+  m_fontSize: 53.1
   m_fontSizeBase: 102.8
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 42.8
+  m_fontSizeMax: 53.1
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 1024
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1424,7 +1429,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 266, y: 118.99997}
+  m_AnchoredPosition: {x: 75, y: -233.00003}
   m_SizeDelta: {x: 128.79, y: 173}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3928447521428549143
@@ -1655,7 +1660,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 89, y: 119}
+  m_AnchoredPosition: {x: -75, y: -233}
   m_SizeDelta: {x: 128.79, y: 173}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &506261640748998527

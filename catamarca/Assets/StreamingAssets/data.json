@@ -3,23 +3,23 @@
 	"delayForNextTrivia":2,
 	"delayResponseDone":0.1,
 	"questionDuration":5,
-	"gameOverDuration":3,
+	"gameOverDuration":6,
 	
-	"intro":"Rosita, la hermana pequeña de la super banda ha perdido dentro de la mina. La súper banda de minería debe entrar en acción lo antes posible para encontrarla. ¡Acuérdense de que el tiempo es “oro”!",
+	"intro":"Rosita, la hermana pequeña de la súper banda se ha perdido dentro de la mina. La súper banda de minería debe entrar en acción lo antes posible para encontrarla. ¡Acuérdense de que el tiempo es “oro”!",
 	"intro_button": "Empezar",
 	"choose": "Elegir",
 	
-	"intro_title_p1":"Titulo 1",
-	"intro_desc_p1":"Descripción del título 1",	
+	"intro_title_p1":"Rodolfo",
+	"intro_desc_p1":"Alias: Rodo, El Rosa, Jefe\nTipo: Rodocrosita\nCaracterísticas: Líder de la banda. Siempre pone las necesidades de los demás por encima de las suyas. Gran compañero, fanático de las empanadas y del mate bien cargado.",	
 	
-	"intro_title_p2":"Titulo 2",
-	"intro_desc_p2":"Descripción del título 2",	
+	"intro_title_p2":"Carlitios",
+	"intro_desc_p2":"Alias:El pibe, El Rayo\nTipo: Litio\nCaracterísticas: El más joven de la banda, pero también el más rápido y enérgico. Siempre dispuesto a ayudar. Debilidad por los rosquetes, que según él, son el secreto de su energía.",	
 	
-	"intro_title_p3":"Titulo 3",
-	"intro_desc_p3":"Descripción del título 3",	
+	"intro_title_p3":"Oriana",
+	"intro_desc_p3":"Alias: Doña Fuerza, La piedra, La T-oro\nTipo: Oro\nCaracterísticas: La más fuerte de la banda. Jamás deja una tarea incompleta. Debilidad por la humita y los tamales.",	
 	
-	"end_win":"Bien",
-	"end_lose":"Mal",
+	"end_win":"¡Buen trabajo! Llegaste hasta Rosita.",
+	"end_lose":"¡Ups! Mejor suerte la próxima vez.",
 	
 	
 	
