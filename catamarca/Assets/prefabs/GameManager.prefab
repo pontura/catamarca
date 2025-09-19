@@ -291,7 +291,7 @@ GameObject:
   - component: {fileID: 2755545765445405925}
   - component: {fileID: 700269123808614934}
   m_Layer: 5
-  m_Name: instro
+  m_Name: intro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -333,6 +333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   game: {fileID: 0}
   field: {fileID: 4803887517080118527}
+  buttonField: {fileID: 8226892119449040416}
 --- !u!1 &1631738011808319390
 GameObject:
   m_ObjectHideFlags: 0
@@ -1453,7 +1454,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3469216328394264267
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1494,7 +1495,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   game: {fileID: 0}
-  field: {fileID: 0}
+  field_en: {fileID: 1726595999367429087}
+  field_es: {fileID: 4351230996617933467}
 --- !u!95 &8366040122336498214
 Animator:
   serializedVersion: 7
@@ -3222,6 +3224,10 @@ PrefabInstance:
       propertyPath: title
       value: 
       objectReference: {fileID: 4208141866660804459}
+    - target: {fileID: 1352395841691561703, guid: 187929b716cdcf942b8f890e951b7b55, type: 3}
+      propertyPath: buttonField
+      value: 
+      objectReference: {fileID: 4454638606262801334}
     - target: {fileID: 1359138134713173259, guid: 187929b716cdcf942b8f890e951b7b55, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3334,6 +3340,17 @@ MonoBehaviour:
 --- !u!114 &4208141866660804459 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4160465920227173047, guid: 187929b716cdcf942b8f890e951b7b55, type: 3}
+  m_PrefabInstance: {fileID: 277713605372564956}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4454638606262801334 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4470013088553191018, guid: 187929b716cdcf942b8f890e951b7b55, type: 3}
   m_PrefabInstance: {fileID: 277713605372564956}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}

@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class Splash : BaseScreen
 {
-    [SerializeField] TMPro.TMP_Text field;
+    [SerializeField] TMPro.TMP_Text field_en;
+    [SerializeField] TMPro.TMP_Text field_es;
 
     private void Start()
     {
@@ -12,6 +13,8 @@ public class Splash : BaseScreen
     }
     public override void OnShow()
     {
+        field_es.text = Data.Instance.gameData.data.intro_button;
+        field_en.text = Data.Instance.gameData.data.intro_button_en;
         Events.ResetApp();
     }
     public void OnClicked(int langID)

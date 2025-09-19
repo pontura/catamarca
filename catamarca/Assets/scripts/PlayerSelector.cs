@@ -6,6 +6,7 @@ public class PlayerSelector : BaseScreen
 
     [SerializeField] TMPro.TMP_Text title;
     [SerializeField] TMPro.TMP_Text field;
+    [SerializeField] TMPro.TMP_Text buttonField;
 
     public override void OnShow()
     {
@@ -19,6 +20,7 @@ public class PlayerSelector : BaseScreen
 
         if (Data.Instance.triviaData.GetLang(game.playerID) == Trivia.TriviaData.langs.es)
         {
+            buttonField.text = Data.Instance.gameData.data.choose;
             switch (playerID)
             {
                 case 0:
@@ -37,6 +39,7 @@ public class PlayerSelector : BaseScreen
         }
         else
         {
+            buttonField.text = Data.Instance.gameData.data.choose_en;
             switch (playerID)
             {
                 case 0:
