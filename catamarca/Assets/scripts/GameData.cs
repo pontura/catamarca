@@ -25,6 +25,9 @@ public class GameData : MonoBehaviour
         public string intro_title_p3;
         public string intro_desc_p3;
 
+        public string end_win;
+        public string end_lose;
+
         public string[] wrong_answers;
     }
     public void Load(string json, System.Action OnLoaded)

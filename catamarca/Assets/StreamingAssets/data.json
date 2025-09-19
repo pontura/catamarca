@@ -12,5 +12,8 @@
 	"intro_desc_p2":"Descripción del título 2",	
 	
 	"intro_title_p3":"Titulo 3",
-	"intro_desc_p3":"Descripción del título 3"
+	"intro_desc_p3":"Descripción del título 3",
+	
+	"end_win":"Bien",
+	"end_lose":"Mal"
 }
