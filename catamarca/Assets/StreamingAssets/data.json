@@ -2,8 +2,8 @@
 	"totalQuestions":6,
 	"delayForNextTrivia":2,
 	"delayResponseDone":0.1,
-	"questionDuration":5,
-	"gameOverDuration":7.5,
+	"questionDuration":5.03,
+	"gameOverDuration":10,
 	
 	"intro":"Rosita, la hermana pequeña de la súper banda se ha perdido dentro de la mina. La súper banda de minería debe entrar en acción lo antes posible para encontrarla. ¡Acuérdense de que el tiempo es “oro”!",
 	"intro_button": "Empezar",
