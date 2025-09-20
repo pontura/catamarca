@@ -5,18 +5,18 @@
 	"questionDuration":5.03,
 	"gameOverDuration":10,
 	
-	"intro":"Rosita, la hermana pequeña de la súper banda se ha perdido dentro de la mina. La súper banda de minería debe entrar en acción lo antes posible para encontrarla. ¡Acuérdense de que el tiempo es “oro”!",
+	"intro":"¡Atención! Rosita, una simpática rodocrosita, se ha perdido en la mina. La Súper Banda de Minería está tratando de encontrarla, pero necesitan tu ayuda.\n\n¿Podrás asistirlos antes de que se derrumbe todo?",
 	"intro_button": "Empezar",
 	"choose": "Elegir",
 	
 	"intro_title_p1":"Rodolfo",
-	"intro_desc_p1":"Alias: Rodo, El Rosa, Jefe\nTipo: Rodocrosita\nCaracterísticas: Líder de la banda. Siempre pone las necesidades de los demás por encima de las suyas. Gran compañero, fanático de las empanadas y del mate bien cargado.",	
+	"intro_desc_p1":"Alias: Rodo, El Rosa, Jefe\n\nTipo: Rodocrosita\n\nCaracterísticas: Líder de la banda. Siempre pone las necesidades de los demás por encima de las suyas. Gran compañero, fanático de las empanadas y del mate bien cargado.",	
 	
 	"intro_title_p2":"Carlitios",
-	"intro_desc_p2":"Alias:El pibe, El Rayo\nTipo: Litio\nCaracterísticas: El más joven de la banda, pero también el más rápido y enérgico. Siempre dispuesto a ayudar. Debilidad por los rosquetes, que según él, son el secreto de su energía.",	
+	"intro_desc_p2":"Alias:El pibe, El Rayo\n\nTipo: Litio\n\nCaracterísticas: El más joven de la banda, pero también el más rápido y enérgico. Siempre dispuesto a ayudar. Debilidad por los rosquetes, que según él, son el secreto de su energía.",	
 	
 	"intro_title_p3":"Oriana",
-	"intro_desc_p3":"Alias: Doña Fuerza, La piedra, La T-oro\nTipo: Oro\nCaracterísticas: La más fuerte de la banda. Jamás deja una tarea incompleta. Debilidad por la humita y los tamales.",	
+	"intro_desc_p3":"Alias: Doña Fuerza, La piedra, La T-oro\n\nTipo: Oro\n\nCaracterísticas: La más fuerte de la banda. Jamás deja una tarea incompleta. Debilidad por la humita y los tamales.",	
 	
 	"end_win":"¡Buen trabajo! Llegaste hasta Rosita.",
 	"end_lose":"¡Ups! Mejor suerte la próxima vez.",
@@ -24,7 +24,7 @@
 	
 	
 	
-	"intro_en":"Rosita, the little sister of the super gang, has been lost inside the mine. The super mining gang must take action as soon as possible to find her. Hurry up!",
+	"intro_en":"Attention! Rosita, a friendly rhodochrosite, has gotten lost in the mine. The Super Mining Gang is trying to find her, but they need your help.\n\nCan you help them before everything collapses?",
 	"intro_button_en": "Start",
 	"choose_en": "Choose",
 	
