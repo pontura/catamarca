@@ -3,7 +3,7 @@
 	"delayForNextTrivia":2,
 	"delayResponseDone":0.1,
 	"questionDuration":5,
-	"gameOverDuration":6,
+	"gameOverDuration":7.5,
 	
 	"intro":"Rosita, la hermana pequeña de la súper banda se ha perdido dentro de la mina. La súper banda de minería debe entrar en acción lo antes posible para encontrarla. ¡Acuérdense de que el tiempo es “oro”!",
 	"intro_button": "Empezar",
@@ -24,19 +24,20 @@
 	
 	
 	
-	"intro_en":"EN Rosita, la hermana pequeña de la super banda ha perdido dentro de la mina. La súper banda de minería debe entrar en acción lo antes posible para encontrarla. ¡Acuérdense de que el tiempo es “oro”!",
+	"intro_en":"Rosita, the little sister of the super gang, has been lost inside the mine. The super mining gang must take action as soon as possible to find her. Hurry up!",
 	"intro_button_en": "Start",
-	"choose_en": "This one!",
+	"choose_en": "Choose",
 	
-	"intro_title_p1_en":"EN Titulo 1",
-	"intro_desc_p1_en":"EN Descripción del título 1",	
+	"intro_title_p1_en":"Rodolfo",
+	"intro_desc_p1_en":"Alias: Rodo, El Rosa, Jefe\nType: Rodocrosita\nCharacteristics: Leader of the gang. Always puts the needs of others above his own. Great companion, fan of empanadas and a strong mate.",	
 	
-	"intro_title_p2_en":"EN Titulo 2",
-	"intro_desc_p2_en":"EN Descripción del título 2",	
+	"intro_title_p2_en":"Carlitios",
+	"intro_desc_p2_en":"Alias: El pibe, El Rayo\nType: Litio\nCharacteristics: The youngest of the gang, but also the fastest and most energetic. Always willing to help. Weakness for rosquetes, which he claims are the secret to his energy.",	
 	
-	"intro_title_p3_en":"EN Titulo 3",
-	"intro_desc_p3_en":"EN Descripción del título 3",
+	"intro_title_p3_en":"Oriana",
+	"intro_desc_p3_en":"Alias: Doña Fuerza, La piedra, La T-oro\nType: Oro\nCharacteristics: The strongest of the gang. She never leaves a task unfinished. Weakness for humita and tamales.",
 	
-	"end_win_en":"Good",
-	"end_lose_en":"Lose"
+	"end_win_en":"Good job! You got to Rosita.",
+	"end_lose_en":"Oops! Better luck next time."
+	
 }
