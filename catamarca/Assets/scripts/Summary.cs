@@ -24,7 +24,7 @@ public class Summary : BaseScreen
                 field.text = Data.Instance.gameData.data.end_win;
             else
                 field.text = Data.Instance.gameData.data.end_win_en;
-            Events.OnWin(true);
+            Events.OnWin(game.playerID, true);
         }
         else
         {
@@ -34,7 +34,7 @@ public class Summary : BaseScreen
                 field.text = Data.Instance.gameData.data.end_lose;
             else
                 field.text = Data.Instance.gameData.data.end_lose_en;
-            Events.OnWin(false);
+            Events.OnWin(game.playerID, false);
         }
 
         game.ResetScore();

@@ -35,9 +35,10 @@ public class Character : MonoBehaviour
         Events.OnCharacterAnim -= OnCharacterAnim;
         Events.OnWin -= OnWin;
     }
-    void OnWin(bool won)
+    void OnWin(int _playerID, bool won)
     {
-        winSummary.SetActive(won);
+        if (playerID == _playerID)
+            winSummary.SetActive(won);
     }
     private void ChangeCharacter(int _playerID, int _chID)
     {
