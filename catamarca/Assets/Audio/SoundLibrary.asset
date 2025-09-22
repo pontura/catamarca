@@ -34,6 +34,12 @@ MonoBehaviour:
   - key: timeout
     clip: {fileID: 8300000, guid: 0dce51d70bffe134685e53112fa73cdd, type: 3}
     vol: 1
+  - key: win
+    clip: {fileID: 8300000, guid: 9218d53e2662e0f46b3db2725f58d51c, type: 3}
+    vol: 1
+  - key: lose
+    clip: {fileID: 8300000, guid: 1825072075e01424aafc78023ee33395, type: 3}
+    vol: 1
   vo_win: []
   vo_correct: []
   vo_wrong: []

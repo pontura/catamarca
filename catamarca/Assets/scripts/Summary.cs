@@ -25,9 +25,11 @@ public class Summary : BaseScreen
             else
                 field.text = Data.Instance.gameData.data.end_win_en;
             Events.OnWin(game.playerID, true);
+            game.PlaySfx("win");
         }
         else
         {
+            game.PlaySfx("lose");
             Events.OnCharacterAnim(game.playerID, Character.anims.lose);
 
             if (Data.Instance.triviaData.GetLang(game.playerID) == Trivia.TriviaData.langs.es)
