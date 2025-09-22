@@ -16,11 +16,11 @@ namespace Trivia
         [SerializeField] List<ProgressPoint> progressPoints;
         [SerializeField] ProgressPoint progressPoint;
         [SerializeField] Transform progressPointsContainer;
-        List<Question> questions;
+        [SerializeField] List<Question> questions;
         TriviaData.Result resultDone;
         [SerializeField] TimerUI timerUI;
         List <TriviaData.Result> results;
-        int triviaID;
+        int triviaIndex;
 
         string okResponse;
         private void Start()
@@ -45,7 +45,7 @@ namespace Trivia
         public override void OnShow()
         {
             print("Trivia OnShow");
-            triviaID = 0;
+            triviaIndex = 0;
             progressPoints = new List<ProgressPoint>();
             YaguarLib.Xtras.Utils.RemoveAllChildsIn(progressPointsContainer);
             questions = new List<Question>();
@@ -66,13 +66,13 @@ namespace Trivia
             }
 
             game.PlaySfx("trivia_entry");
-            InitTrivia(questions[triviaID]);           
+            InitTrivia(questions[triviaIndex]);           
         }
         public void InitTrivia(TriviaData.Question question)
         {
             game.PlaySfx("timer", true);
             timerUI.Init(Data.Instance.gameData.data.questionDuration, game.playerID);
-            okResponse = questions[triviaID].results[0].response;          
+            okResponse = questions[triviaIndex].results[0].response;          
 
             field.text = question.title;
 
@@ -82,7 +82,7 @@ namespace Trivia
             buttons = new List<TriviaButton>();
 
             results = new List<TriviaData.Result>();
-            foreach (TriviaData.Result result in questions[triviaID].results)
+            foreach (TriviaData.Result result in questions[triviaIndex].results)
             {
                 results.Add(result);
             }
@@ -94,8 +94,8 @@ namespace Trivia
                 buttonId++;
                 buttons.Add(b);
             }
-            print("InitTrivia" + triviaID);
-            progressPoints[triviaID].SetState(ProgressPoint.states.on);
+            print("InitTrivia" + triviaIndex);
+            progressPoints[triviaIndex].SetState(ProgressPoint.states.on);
             Events.OnCharacterAnim(game.playerID, Character.anims.idle);
         }
         public void OnSelect(TriviaButton button)
@@ -141,15 +141,15 @@ namespace Trivia
             if(isCorrect)
             {
                 GetComponent<Animator>().Play("right");
-                image.sprite = Data.Instance.triviaData.GetSprite(triviaID);
+                image.sprite = Data.Instance.triviaData.GetSprite(questions[triviaIndex].id);
                 Events.OnCharacterAnim(game.playerID, Character.anims.right);
-                progressPoints[triviaID].SetState(ProgressPoint.states.done_ok);
+                progressPoints[triviaIndex].SetState(ProgressPoint.states.done_ok);
             }
             else
             {
                 GetComponent<Animator>().Play("wrong");
                 Events.OnCharacterAnim(game.playerID, Character.anims.wrong);
-                progressPoints[triviaID].SetState(ProgressPoint.states.done_wrong);
+                progressPoints[triviaIndex].SetState(ProgressPoint.states.done_wrong);
             }
 
             Events.OnResponse(isCorrect);
@@ -157,13 +157,13 @@ namespace Trivia
         }
         void Next()
         {
-            triviaID++;
-            if (triviaID >= Data.Instance.gameData.data.totalQuestions)
+            triviaIndex++;
+            if (triviaIndex >= Data.Instance.gameData.data.totalQuestions)
             {
-                triviaID = 0;
+                triviaIndex = 0;
                 TriviaComplete();
             } else
-                InitTrivia(questions[triviaID]);
+                InitTrivia(questions[triviaIndex]);
         }
         void TriviaComplete()
         {

@@ -33,8 +33,13 @@ public class Data : MonoBehaviour
     }
     void OnDataDone()
     {
-        triviaData.Load("trivia.json", Init);
+        triviaData.Load("trivia.json", LoadSprites);
     }
+
+    void LoadSprites() {
+        triviaData.LoadSprites(Init);
+    }
+
     void Init()
     {
         game1.Init();
