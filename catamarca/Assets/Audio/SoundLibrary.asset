@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: SoundLibrary
   m_EditorClassIdentifier: 
   audioClips:
+  - key: splash
+    clip: {fileID: 8300000, guid: f93e1dcb27cd29d41893ad2551244b58, type: 3}
+    vol: 1
   - key: click
     clip: {fileID: 8300000, guid: 5686b8dc8c376e44faf297ed677c7a67, type: 3}
     vol: 1

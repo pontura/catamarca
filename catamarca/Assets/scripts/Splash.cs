@@ -25,7 +25,7 @@ public class Splash : BaseScreen
         else
             Data.Instance.triviaData.SetLang(game.playerID, Trivia.TriviaData.langs.en);
         //YaguarLib.Events.Events.OnPlaySoundInChannel(YaguarLib.Audio.AudioManager.types.UI_GENERIC, YaguarLib.Audio.AudioManager.channels.UI);
-        game.PlaySfx("click");
+        game.PlaySfx("scroll");
         game.NextScreen();
     }
 }
