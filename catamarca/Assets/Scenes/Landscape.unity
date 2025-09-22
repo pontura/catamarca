@@ -262,6 +262,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data:
+    inputType: 0
+    p1_key1: 
+    p1_key2: 
+    p1_key3: 
+    p2_key1: 
+    p2_key2: 
+    p2_key3: 
     gameOverDuration: 0
     totalQuestions: 0
     delayForNextTrivia: 0

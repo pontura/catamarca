@@ -29,7 +29,7 @@ namespace Trivia
         }
         private void OnDestroy()
         {
-            Events.OnTimeOver += OnTimeOver;
+            Events.OnTimeOver -= OnTimeOver;
         }
         private void OnTimeOver(int _playerID)
         {
@@ -40,7 +40,6 @@ namespace Trivia
                 b.SetInteraction(false);
             }
             StopGame();
-
         }
         public override void OnShow()
         {
@@ -94,9 +93,15 @@ namespace Trivia
                 buttonId++;
                 buttons.Add(b);
             }
-            print("InitTrivia" + triviaIndex);
             progressPoints[triviaIndex].SetState(ProgressPoint.states.on);
             Events.OnCharacterAnim(game.playerID, Character.anims.idle);
+        }
+        public override void OnKey(int key)
+        {
+            print("OnKey" + key);
+            if (!buttons[key - 1].GetComponent<Button>().interactable) return;
+            buttons[key - 1].selected = true;
+            OnSelect(buttons[key-1]);
         }
         public void OnSelect(TriviaButton button)
         {

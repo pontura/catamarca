@@ -5,12 +5,6 @@ public class Summary : BaseScreen
 {
     [SerializeField] TMPro.TMP_Text field;
 
-    private void Start()
-    {
-    }
-    private void OnDestroy()
-    {
-    }
     public override void OnShow()
     {
         Invoke("Ready", Data.Instance.gameData.data.gameOverDuration);

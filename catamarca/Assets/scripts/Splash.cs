@@ -5,18 +5,20 @@ public class Splash : BaseScreen
     [SerializeField] TMPro.TMP_Text field_en;
     [SerializeField] TMPro.TMP_Text field_es;
 
-    private void Start()
-    {
-    }
-    private void OnDestroy()
-    {
-    }
+  
     public override void OnShow()
     {
         game.PlaySfx("splash");
         field_es.text = Data.Instance.gameData.data.intro_button;
         field_en.text = Data.Instance.gameData.data.intro_button_en;
         Events.ResetApp(game.playerID);
+    }
+    public override void OnKey(int key)
+    {
+        if (key == 2)
+            OnClicked(2);
+        else 
+            OnClicked(1);
     }
     public void OnClicked(int langID)
     {

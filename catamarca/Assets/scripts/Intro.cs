@@ -5,12 +5,6 @@ public class Intro : BaseScreen
     [SerializeField] TMPro.TMP_Text field;
     [SerializeField] TMPro.TMP_Text buttonField;
 
-    private void Start()
-    {
-    }
-    private void OnDestroy()
-    {
-    }
     public override void OnShow()
     {
         if (Data.Instance.triviaData.GetLang(game.playerID) == Trivia.TriviaData.langs.es)
@@ -24,6 +18,10 @@ public class Intro : BaseScreen
             buttonField.text = Data.Instance.gameData.data.intro_button_en;
         }
         Events.ResetApp(game.playerID);
+    }
+    public override void OnKey(int key)
+    {
+        OnClicked(0);
     }
     public void OnClicked(int langID)
     {

@@ -10,6 +10,16 @@ public class GameData : MonoBehaviour
     [Serializable]
     public class Data
     {
+        public int inputType; // 0 = touch, 1 = joysticks
+
+        public string p1_key1;
+        public string p1_key2;
+        public string p1_key3;
+
+        public string p2_key1;
+        public string p2_key2;
+        public string p2_key3;
+
         public float gameOverDuration;
         public int totalQuestions;
         public float delayForNextTrivia;

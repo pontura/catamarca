@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    InputManager inputManager;
     [SerializeField] TriviaUI trivia;
     [SerializeField] BaseScreen[] screens;
     [SerializeField] int screenID;
@@ -16,6 +17,8 @@ public class GameManager : MonoBehaviour
     }
     public void Init()
     {
+        inputManager = gameObject.AddComponent<InputManager>();
+        inputManager.Init(playerID);
         foreach (BaseScreen s in screens)
             s.Init(this);
         ShowScreen();

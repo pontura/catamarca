@@ -1,4 +1,14 @@
 {
+	"inputType" : 1,
+	
+	"p1_key1": "Alpha1",
+	"p1_key2": "Alpha2",
+	"p1_key3": "Alpha3",
+	
+	"p2_key1": "Alpha4",
+	"p2_key2": "Alpha5",
+	"p2_key3": "Alpha6",
+	
 	"totalQuestions":6,
 	"delayForNextTrivia":2,
 	"delayResponseDone":0.1,

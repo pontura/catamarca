@@ -11,7 +11,7 @@ namespace Trivia
         public int id;
         TriviaUI triviaUI;
         public TriviaData.Result result;
-        bool selected;
+        public bool selected;
 
         System.Action<bool> OnDone;
 

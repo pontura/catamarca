@@ -17,7 +17,6 @@ public class PlayerSelector : BaseScreen
     }
     void SetTexts()
     {
-
         if (Data.Instance.triviaData.GetLang(game.playerID) == Trivia.TriviaData.langs.es)
         {
             buttonField.text = Data.Instance.gameData.data.choose;
@@ -56,6 +55,13 @@ public class PlayerSelector : BaseScreen
                     break;
             }
         }
+    }
+    public override void OnKey(int key)
+    {
+        if (key == 3)
+            StartGame();
+        else
+            OnSelect(key);
     }
     public void OnSelect(int p)
     {
