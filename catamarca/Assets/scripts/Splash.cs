@@ -13,6 +13,7 @@ public class Splash : BaseScreen
     }
     public override void OnShow()
     {
+        game.PlaySfx("splash");
         field_es.text = Data.Instance.gameData.data.intro_button;
         field_en.text = Data.Instance.gameData.data.intro_button_en;
         Events.ResetApp(game.playerID);
