@@ -28,7 +28,7 @@ public class Intro : BaseScreen
     public void OnClicked(int langID)
     {
         //YaguarLib.Events.Events.OnPlaySoundInChannel(YaguarLib.Audio.AudioManager.types.UI_GENERIC, YaguarLib.Audio.AudioManager.channels.UI);
-        game.PlaySfx("click");
+        game.PlaySfx("scroll");
         game.NextScreen();
     }
 }
