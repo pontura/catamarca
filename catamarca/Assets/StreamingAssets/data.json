@@ -24,18 +24,18 @@
 	
 	
 	
-	"intro_en":"Attention! Rosita, a friendly rhodochrosite, has gotten lost in the mine. The Super Mining Gang is trying to find her, but they need your help.\n\nCan you help them before everything collapses?",
+	"intro_en":"Attention! Rosita, a friendly rhodochrosite, is lost in the mine. The Super Mining Band is trying to find her, but they need your help!\n\nCan you assist them before everything collapses?",
 	"intro_button_en": "Start",
 	"choose_en": "Choose",
 	
 	"intro_title_p1_en":"Rodolfo",
-	"intro_desc_p1_en":"Alias: Rodo, El Rosa, Jefe\nType: Rodocrosita\nCharacteristics: Leader of the gang. Always puts the needs of others above his own. Great companion, fan of empanadas and a strong mate.",	
+	"intro_desc_p1_en":"Alias: Rodo, El Rosa, Jefe\n\nType: Rodocrosita\n\nCharacteristics: Leader of the gang. Always puts the needs of others above his own. Great companion, fan of empanadas and a strong mate.",	
 	
 	"intro_title_p2_en":"Carlitios",
-	"intro_desc_p2_en":"Alias: El pibe, El Rayo\nType: Litio\nCharacteristics: The youngest of the gang, but also the fastest and most energetic. Always willing to help. Weakness for rosquetes, which he claims are the secret to his energy.",	
+	"intro_desc_p2_en":"Alias: El pibe, El Rayo\n\nType: Litio\n\nCharacteristics: The youngest of the gang, but also the fastest and most energetic. Always willing to help. Weakness for rosquetes, which he claims are the secret to his energy.",	
 	
 	"intro_title_p3_en":"Oriana",
-	"intro_desc_p3_en":"Alias: Doña Fuerza, La piedra, La T-oro\nType: Oro\nCharacteristics: The strongest of the gang. She never leaves a task unfinished. Weakness for humita and tamales.",
+	"intro_desc_p3_en":"Alias: Doña Fuerza, La piedra, La T-oro\n\nType: Oro\n\nCharacteristics: The strongest of the gang. She never leaves a task unfinished. Weakness for humita and tamales.",
 	
 	"end_win_en":"Good job! You got to Rosita.",
 	"end_lose_en":"Oops! Better luck next time."
