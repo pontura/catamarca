@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using YaguarLib.UI;
+using static Trivia.TriviaData;
 
 namespace Trivia
 {
@@ -16,7 +16,7 @@ namespace Trivia
         [SerializeField] List<ProgressPoint> progressPoints;
         [SerializeField] ProgressPoint progressPoint;
         [SerializeField] Transform progressPointsContainer;
-
+        List<Question> questions;
         TriviaData.Result resultDone;
         [SerializeField] TimerUI timerUI;
         List <TriviaData.Result> results;
@@ -48,6 +48,13 @@ namespace Trivia
             triviaID = 0;
             progressPoints = new List<ProgressPoint>();
             YaguarLib.Xtras.Utils.RemoveAllChildsIn(progressPointsContainer);
+            questions = new List<Question>();
+            foreach (Question q in Data.Instance.triviaData.GetData(game.playerID).questions)
+            {
+                questions.Add(q);
+            }
+            YaguarLib.Xtras.Utils.Shuffle(questions);
+
             for (int a = 0; a < Data.Instance.gameData.data.totalQuestions; a++)
             {
                 ProgressPoint p = Instantiate(progressPoint, progressPointsContainer);
@@ -59,13 +66,13 @@ namespace Trivia
             }
 
             game.PlaySfx("trivia_entry");
-            InitTrivia(Data.Instance.triviaData.GetData(game.playerID).questions[triviaID]);           
+            InitTrivia(questions[triviaID]);           
         }
         public void InitTrivia(TriviaData.Question question)
         {
             game.PlaySfx("timer", true);
             timerUI.Init(Data.Instance.gameData.data.questionDuration, game.playerID);
-            okResponse = Data.Instance.triviaData.GetData(game.playerID).questions[triviaID].results[0].response;          
+            okResponse = questions[triviaID].results[0].response;          
 
             field.text = question.title;
 
@@ -75,7 +82,7 @@ namespace Trivia
             buttons = new List<TriviaButton>();
 
             results = new List<TriviaData.Result>();
-            foreach (TriviaData.Result result in Data.Instance.triviaData.GetData(game.playerID).questions[triviaID].results)
+            foreach (TriviaData.Result result in questions[triviaID].results)
             {
                 results.Add(result);
             }
@@ -156,7 +163,7 @@ namespace Trivia
                 triviaID = 0;
                 TriviaComplete();
             } else
-                InitTrivia(Data.Instance.triviaData.GetData(game.playerID).questions[triviaID]);
+                InitTrivia(questions[triviaID]);
         }
         void TriviaComplete()
         {

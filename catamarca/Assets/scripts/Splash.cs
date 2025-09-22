@@ -15,7 +15,7 @@ public class Splash : BaseScreen
     {
         field_es.text = Data.Instance.gameData.data.intro_button;
         field_en.text = Data.Instance.gameData.data.intro_button_en;
-        Events.ResetApp();
+        Events.ResetApp(game.playerID);
     }
     public void OnClicked(int langID)
     {

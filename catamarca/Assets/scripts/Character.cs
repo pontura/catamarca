@@ -25,7 +25,7 @@ public class Character : MonoBehaviour
         Events.ChangeCharacter += ChangeCharacter;
         Events.OnCharacterAnim += OnCharacterAnim;
         Events.OnWin += OnWin;
-        ResetApp();
+        ResetApp(playerID);
     }
 
     void OnDestroy()
@@ -55,13 +55,16 @@ public class Character : MonoBehaviour
             anim.gameObject.SetActive(false);
         animators[characterID].gameObject.SetActive(true);
     }
-    void ResetApp()
+    void ResetApp(int _playerID)
     {
-        winSummary.SetActive(false);
-        damage.SetActive(false);
-        damageNum = 0;
-        gameObject.SetActive(false);
-        Invoke("Reseted", 0.1f);
+        if (playerID == _playerID)
+        {
+            winSummary.SetActive(false);
+            damage.SetActive(false);
+            damageNum = 0;
+            gameObject.SetActive(false);
+            Invoke("Reseted", 0.1f);
+        }
     }
     void Reseted()
     {

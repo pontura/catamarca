@@ -23,7 +23,7 @@ public class Intro : BaseScreen
             field.text = Data.Instance.gameData.data.intro_en;
             buttonField.text = Data.Instance.gameData.data.intro_button_en;
         }
-        Events.ResetApp();
+        Events.ResetApp(game.playerID);
     }
     public void OnClicked(int langID)
     {
