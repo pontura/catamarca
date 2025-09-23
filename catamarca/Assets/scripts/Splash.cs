@@ -5,7 +5,6 @@ public class Splash : BaseScreen
     [SerializeField] TMPro.TMP_Text field_en;
     [SerializeField] TMPro.TMP_Text field_es;
 
-  
     public override void OnShow()
     {
         game.PlaySfx("splash");

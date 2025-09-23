@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class BaseScreen : MonoBehaviour
 {
+    [SerializeField] ButtonColor[] buttonColors;
+
     protected void OnEnable()
     {
         Events.OnKeyPressed += OnKeyPressed;

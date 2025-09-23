@@ -5,6 +5,7 @@ namespace Trivia
 {
     public class TriviaButton : MonoBehaviour
     {
+        [SerializeField] ButtonColor buttonColor;
         [SerializeField] TMPro.TMP_Text field;
         [SerializeField] Animator anim;
         [SerializeField] Animator feedback;
@@ -21,6 +22,7 @@ namespace Trivia
         }
         public void Init(TriviaUI triviaUI, int id, TriviaData.Result result, System.Action<bool> onDone)
         {
+            buttonColor.Init(id+1);
             this.result = result;
             this.triviaUI = triviaUI;
             this.id = id;
