@@ -3,122 +3,122 @@
 	[
 		{
 			"id":0,			
-			"title": "EN ¿Qué mineral hace que funcione la batería de un celular?",
+			"title": "What makes a cellphone battery work?",
 			"results":
 			[
-				{"response": "EN Litio"},
-				{"response": "EN Mármol"},
-				{"response": "EN Grafito"}
+				{"response": "Lithium"},
+				{"response": "Marble"},
+				{"response": "Limestone"}
 			]
 		},
 		{
 			"id":1,			
-			"title": "EN En la computadora, los circuitos llevan...",
+			"title": "In a computer, the circuits are made with…",
 			"results":
 			[
-				{"response": "EN Cobre y Oro"},
-				{"response": "EN Yeso y Talco"},
-				{"response": "EN Calcita y Baritina"}
+				{"response": "Copper and Gold"},
+				{"response": "Gypsum and Talc"},
+				{"response": "Calcite and Barite"}
 			]
 		},
 		{
 			"id":2,			
-			"title": "EN El vaso de vidrio está hecho con...",
+			"title": "A glass cup is made from…",
 			"results":
 			[
-				{"response": "EN Cuarzo, Feldespato y Sílice"},
-				{"response": "EN Rodocrosita y Rubí"},
-				{"response": "EN Titanio y Platino"}
+				{"response": "Quartz, Feldspar, and Silica"},
+				{"response": "Rhodochrosite and Ruby"},
+				{"response": "Titanium and Platinum"}
 			]
 		},
 		{
 			"id":3,			
-			"title": "EN ¿Qué mineral está en las lámparas LED y en los paneles solares?",
+			"title": "Which mineral is found in LED lamps and solar panels?",
 			"results":
 			[
-				{"response": "EN Silicio"},
-				{"response": "EN Hierro"},
-				{"response": "EN Fluorita"}
+				{"response": "Silicon"},
+				{"response": "Iron"},
+				{"response": "Fluorite"}
 			]
 		},
 		{
 			"id":4,			
-			"title": "La mina de un lápiz está hecha de...",
+			"title": "A pencil lead is made of…",
 			"results":
 			[
-				{"response": "Grafito y Arcilla"},
-				{"response": "Plata y Oro"},
-				{"response": "Caolín y Yeso"}
+				{"response": "Graphite and Clay"},
+				{"response": "Silver and Gold"},
+				{"response": "Kaolin and Gypsum"}
 			]
 		},
 		{
 			"id":5,			
-			"title": "La tiza del pizarrón contiene...",
+			"title": "Chalk for blackboards contains…",
 			"results":
 			[
-				{"response": "Yeso y Caolinita"},
-				{"response": "Cuarzo y Feldespato"},
-				{"response": "Litio y Mica"}
+				{"response": "Gypsum and Kaolinite"},
+				{"response": "Quartz and Feldspar"},
+				{"response": "Lithium and Mica"}
 			]
 		},
 		{
 			"id":6,			
-			"title": "En los cosméticos como labiales y sombras se encuentran minerales como...",
+			"title": "In cosmetics, such as lipsticks and eyeshadows, we can find…",
 			"results":
 			[
-				{"response": "Mica, Óxido de zinc, Dióxido de titanio"},
-				{"response": "Oro y Plata"},
-				{"response": "Azufre y Fósforo"}
+				{"response": "Mica, Zinc Oxide, Titanium Dioxide"},
+				{"response": "Gold and Silver"},
+				{"response": "Sulfur and Phosphorus"}
 			]
 		},
 		{
 			"id":7,			
-			"title": "Los antibióticos que previenen bacterias contienen...",
+			"title": "Antibiotics that fight bacteria contain…",
 			"results":
 			[
-				{"response": "Plata"},
-				{"response": "Hierro"},
-				{"response": "Manganeso"}
+				{"response": "Silver"},
+				{"response": "Iron"},
+				{"response": "Manganese"}
 			]
 		},
 		{
 			"id":8,			
-			"title": "Los marcapasos artificiales funcionan gracias a...",
+			"title": "Artificial pacemakers work thanks to…",
 			"results":
 			[
-				{"response": "Platino y Litio"},
-				{"response": "Cuarzo y Yeso"},
-				{"response": "Calcita y Talco"}
+				{"response": "Platinum and Lithium"},
+				{"response": "Quartz and Gypsum"},
+				{"response": "Calcite and Talc"}
 			]
 		},
 		{
 			"id":9,			
-			"title": "El resonador magnético usa...",
+			"title": "MRI machines use…",
 			"results":
 			[
-				{"response": "Cobre"},
-				{"response": "Rubí"},
-				{"response": "Dolomita"}
+				{"response": "Copper"},
+				{"response": "Ruby"},
+				{"response": "Dolomite"}
 			]
 		},
 		{
 			"id":10,			
-			"title": "La carrocería y motor de los autos contienen...",
+			"title": "Car bodies and engines are made with…",
 			"results":
 			[
-				{"response": "Hierro, Aluminio, Cobre, Litio"},
-				{"response": "Yeso y Baritina"},
-				{"response": "Plata y Rodocrosita"}
+				{"response": "Iron, Aluminum, Copper, Lithium"},
+				{"response": "Gypsum and Barite"},
+				{"response": "Silver and Rhodochrosite"}
 			]
 		},
 		{
 			"id":11,			
-			"title": "En la huerta, los fertilizantes que ayudan a crecer a los tomates llevan...",
+			"title": "In gardening, fertilizers that help tomatoes grow contain…",
 			"results":
 			[
-				{"response": "Fósforo y Azufre"},
-				{"response": "Oro y Rubí"},
-				{"response": "Titanio y Silicio"}
+				{"response": "Nitrogen, Phosphorus and Potassium"},
+				{"response": "Gold and Ruby"},
+				{"response": "Titanium and Silicon"}
 			]
 		}
 	]

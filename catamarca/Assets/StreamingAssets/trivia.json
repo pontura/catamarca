@@ -3,7 +3,7 @@
 	[
 		{
 			"id":0,
-			"title": "¿Qué mineral hace que funcione la batería de un celular?",
+			"title": "¿Qué hace que funcione la batería de un celular?",
 			"results":
 			[
 				{"response": "Litio"},
@@ -63,7 +63,7 @@
 		},
 		{
 			"id":6,			
-			"title": "En los cosméticos como labiales y sombras se encuentran minerales como...",
+			"title": "En los cosméticos como labiales y sombras podemos encontrar...",
 			"results":
 			[
 				{"response": "Mica, Óxido de zinc, Dióxido de titanio"},
