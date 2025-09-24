@@ -1642,9 +1642,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: ButtonColor
       objectReference: {fileID: 0}
+    - target: {fileID: 2244724587467180809, guid: 6be934e4a7c07c54d99b9a8e5bec2492, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2244724587467180809, guid: 6be934e4a7c07c54d99b9a8e5bec2492, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 7.9
+      objectReference: {fileID: 0}
     - target: {fileID: 4372580727342414600, guid: 6be934e4a7c07c54d99b9a8e5bec2492, type: 3}
       propertyPath: id
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5689961654382271122, guid: 6be934e4a7c07c54d99b9a8e5bec2492, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 9.999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 5689961654382271122, guid: 6be934e4a7c07c54d99b9a8e5bec2492, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 7.8999925
       objectReference: {fileID: 0}
     - target: {fileID: 6765371621278729491, guid: 6be934e4a7c07c54d99b9a8e5bec2492, type: 3}
       propertyPath: m_Pivot.x
