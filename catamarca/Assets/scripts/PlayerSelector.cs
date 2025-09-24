@@ -58,10 +58,12 @@ public class PlayerSelector : BaseScreen
     }
     public override void OnKey(int key)
     {
-        if (key == 3)
+        if (key == 2)
             StartGame();
-        else
-            OnSelect(key);
+        else if (key == 1)
+            OnSelect(1);
+        else if (key == 3)
+            OnSelect(3);
     }
     public void OnSelect(int p)
     {
