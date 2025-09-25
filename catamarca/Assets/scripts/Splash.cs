@@ -14,9 +14,9 @@ public class Splash : BaseScreen
     }
     public override void OnKey(int key)
     {
-        if (key == 2)
+        if (key == 3)
             OnClicked(2);
-        else 
+        else if (key == 1)
             OnClicked(1);
     }
     public void OnClicked(int langID)
