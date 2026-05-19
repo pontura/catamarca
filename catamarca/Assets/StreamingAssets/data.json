@@ -12,7 +12,7 @@
 	"totalQuestions":6,
 	"delayForNextTrivia":2,
 	"delayResponseDone":0.1,
-	"questionDuration":5.03,
+	"questionDuration":10,
 	"gameOverDuration":10,
 	
 	"intro":"¡Atención! Rosita, una simpática rodocrosita, se ha perdido en la mina. La Súper Banda de Minería está tratando de encontrarla, pero necesitan tu ayuda.\n\n¿Podrás asistirlos antes de que se derrumbe todo?",
