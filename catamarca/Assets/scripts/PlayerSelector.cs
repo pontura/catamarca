@@ -67,6 +67,7 @@ public class PlayerSelector : BaseScreen
     }
     public void OnSelect(int p)
     {
+        OnTapScreen();
         //YaguarLib.Events.Events.OnPlaySoundInChannel(YaguarLib.Audio.AudioManager.types.UI_SWIPE, YaguarLib.Audio.AudioManager.channels.UI);
         game.PlaySfx("scroll");
         if (p == 1) playerID++;

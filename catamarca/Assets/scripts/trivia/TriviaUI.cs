@@ -105,6 +105,7 @@ namespace Trivia
         }
         public void OnSelect(TriviaButton button)
         {
+            OnTapScreen();
             resultDone = button.result;
             foreach (TriviaButton b in buttons)
             {

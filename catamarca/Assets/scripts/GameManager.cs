@@ -40,6 +40,13 @@ public class GameManager : MonoBehaviour
         foreach (BaseScreen s in screens)
             s.Show(false);
     }
+    public void ResetApp()
+    {
+        StopLoopSfx();
+        screenID = 0;
+        ShowScreen();
+        ResetScore();
+    }
     public void ResetScore()
     {
         this.score = 0;

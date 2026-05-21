@@ -39,4 +39,5 @@ public class Summary : BaseScreen
     {
         game.NextScreen();
     }
+    public override void OnResetScreen() { }//no hace nada:
 }

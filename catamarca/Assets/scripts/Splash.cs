@@ -21,6 +21,7 @@ public class Splash : BaseScreen
     }
     public void OnClicked(int langID)
     {
+        OnTapScreen();
         if (langID == 1)
             Data.Instance.triviaData.SetLang(game.playerID, Trivia.TriviaData.langs.es);
         else
@@ -29,4 +30,5 @@ public class Splash : BaseScreen
         game.PlaySfx("click");
         game.NextScreen();
     }
+    public override void OnResetScreen() { }//no hace nada:
 }

@@ -1,4 +1,5 @@
 {
+	"resetDuration":60,
 	"inputType" : 1,
 	
 	"p1_key1": "Alpha1",

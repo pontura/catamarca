@@ -10,6 +10,7 @@ public class GameData : MonoBehaviour
     [Serializable]
     public class Data
     {
+        public int resetDuration; 
         public int inputType; // 0 = touch, 1 = joysticks
 
         public string p1_key1;
